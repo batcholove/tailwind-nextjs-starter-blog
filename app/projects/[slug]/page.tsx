@@ -3,11 +3,12 @@ import projectsData from '@/data/projectsData'
 import Image from '@/components/Image'
 
 interface ProjectPageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projectsData.find((p) => p.slug === params.slug)
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params
+  const project = projectsData.find((p) => p.slug === slug)
   if (!project) return notFound()
 
   return (
