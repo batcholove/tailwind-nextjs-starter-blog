@@ -17,13 +17,13 @@ const projectsData: Project[] = [
     slug: 'growing-ux-maturity',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
+    title: 'Abba haircare brand update',
+    description: `A comprehensive brand refresh for a beloved haircare line. This project involved 
+    modernizing visual identity, packaging design, and digital presence while 
+    maintaining the brand's heritage and customer loyalty.`,
     imgSrc: '/static/images/time-machine.jpg',
-    href: '/projects/the-time-machine',
-    slug: 'the-time-machine',
+    href: '/projects/abba-haircare-brand-update',
+    slug: 'abba-haircare-brand-update',
   },
   {
     title: 'Project Case Study 1',
