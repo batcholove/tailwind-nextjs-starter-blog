@@ -52,11 +52,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <p className="mb-8 text-lg">{project.description}</p>
 
       {/* Previous/Next Navigation */}
-      <div className="mt-12 flex gap-4">
+      <div className="mt-12 flex justify-center gap-8">
         {previousProject ? (
           <Link
             href={`/projects/${previousProject.slug}`}
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex flex-1 items-center justify-center gap-2 transition-colors"
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,12 +73,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             Previous project
           </Link>
         ) : (
-          <div className="flex-1" />
+          <div />
         )}
         {nextProject ? (
           <Link
             href={`/projects/${nextProject.slug}`}
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex flex-1 items-center justify-center gap-2 transition-colors"
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
           >
             Next project
             <svg
@@ -95,7 +95,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </svg>
           </Link>
         ) : (
-          <div className="flex-1" />
+          <div />
         )}
       </div>
     </div>
