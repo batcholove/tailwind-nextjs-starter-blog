@@ -1,7 +1,19 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import { allProjects } from '.contentlayer/generated/index.mjs'
 import projectsData from '@/data/projectsData'
 import Image from '@/components/Image'
+import { MDXLayoutRenderer } from 'pliny/mdx-components'
+import { components } from '@/components/MDXComponents'
+
+interface MDXProject {
+  slug: string
+  title: string
+  description: string
+  imgSrc?: string
+  body: { code: string }
+  [key: string]: unknown
+}
 
 interface ProjectPageProps {
   params: Promise<{ slug: string }>
@@ -9,11 +21,26 @@ interface ProjectPageProps {
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params
+
+  // Try to find MDX project first
+  let mdxProject: MDXProject | undefined
+  try {
+    const found = allProjects.find((p) => {
+      const project = p as unknown as { slug?: string }
+      return project.slug === slug
+    })
+    mdxProject = found as MDXProject | undefined
+  } catch (e) {
+    // Contentlayer not ready or project not found
+  }
+
+  // Fall back to projectsData
   const projectIndex = projectsData.findIndex((p) => p.slug === slug)
-  const project = projectsData[projectIndex]
+  const fallbackProject = projectsData[projectIndex]
 
-  if (!project) return notFound()
+  if (!mdxProject && !fallbackProject) return notFound()
 
+  const project = mdxProject || fallbackProject
   const previousProject = projectIndex > 0 ? projectsData[projectIndex - 1] : null
   const nextProject = projectIndex < projectsData.length - 1 ? projectsData[projectIndex + 1] : null
 
@@ -49,7 +76,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           className="mb-6 rounded-lg"
         />
       )}
-      <p className="mb-8 text-lg">{project.description}</p>
+
+      {/* Render MDX content if available, otherwise fall back to description */}
+      {mdxProject?.body?.code ? (
+        <div className="prose dark:prose-invert mb-8 max-w-none">
+          <MDXLayoutRenderer code={mdxProject.body.code} components={components} />
+        </div>
+      ) : (
+        <p className="mb-8 text-lg">{project.description}</p>
+      )}
 
       {/* Previous/Next Navigation */}
       <div className="mt-12 flex justify-between gap-8">
