@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { allProjects } from '.contentlayer/generated/index.mjs'
+import { allProjects } from 'contentlayer/generated'
 import projectsData from '@/data/projectsData'
 import Image from '@/components/Image'
 import { MDXLayoutRenderer } from 'pliny/mdx-components'
