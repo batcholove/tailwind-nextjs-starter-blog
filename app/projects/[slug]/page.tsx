@@ -52,7 +52,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <p className="mb-8 text-lg">{project.description}</p>
 
       {/* Previous/Next Navigation */}
-      <div className="mt-12 flex justify-center gap-8">
+      <div className="mt-12 flex justify-between gap-8">
         {previousProject ? (
           <Link
             href={`/projects/${previousProject.slug}`}
