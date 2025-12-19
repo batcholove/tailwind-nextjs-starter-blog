@@ -44,13 +44,13 @@ const projectsData: Project[] = [
     slug: 'putting-people-first',
   },
   {
-    title: 'Project Case Study 3',
-    description: `A deep dive into design strategy and execution. This project illustrates how 
-    empathy, research, and iteration led to a product that truly serves user needs 
-    while achieving business objectives.`,
+    title: 'Interface FLOR',
+    description: `Designing modular flooring solutions while building digital design tools and improving operations. 
+    This project focused on increasing sales, customer and employee satisfaction while reducing returns through 
+    strategic UX design and operational excellence.`,
     imgSrc: '',
-    href: '/projects/project-case-study-3',
-    slug: 'project-case-study-3',
+    href: '/projects/interface-flor',
+    slug: 'interface-flor',
   },
   {
     title: 'Project Case Study 4',
