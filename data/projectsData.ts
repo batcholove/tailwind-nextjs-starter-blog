@@ -79,6 +79,15 @@ const projectsData: Project[] = [
     href: '/projects/design-systems',
     slug: 'design-systems',
   },
+  {
+    title: 'System Design',
+    description: `Redesigning a suite of government applications through a holistic approach to system design. This project 
+    leverages a comprehensive design system and UI component library while thinking strategically about the entire 
+    system architecture, user workflows, and organizational impact across multiple applications.`,
+    imgSrc: '',
+    href: '/projects/system-design',
+    slug: 'system-design',
+  },
 ]
 
 export default projectsData
