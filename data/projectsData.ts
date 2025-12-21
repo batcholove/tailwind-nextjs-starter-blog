@@ -48,7 +48,7 @@ const projectsData: Project[] = [
     description: `Designing modular flooring solutions while building digital design tools and improving operations. 
     This project focused on increasing sales, customer and employee satisfaction while reducing returns through 
     strategic UX design and operational excellence.`,
-    imgSrc: '/static/images/interface-flor-cover.png',
+    imgSrc: '/static/images/interface-flor-cover.jpg',
     href: '/projects/interface-flor',
     slug: 'interface-flor',
   },
@@ -57,7 +57,7 @@ const projectsData: Project[] = [
     description: `Discover the importance of a strong logo design in connecting with customers and communicating 
     the brand's values. This project explores how thoughtful logo design creates lasting impressions, builds brand 
     recognition, and becomes the visual cornerstone of a company's identity.`,
-    imgSrc: '/static/images/logo-design-marketing-cover.jpg',
+    imgSrc: '/static/images/logo-design-marketing-cover.png',
     href: '/projects/logo-design-marketing',
     slug: 'logo-design-marketing',
   },
@@ -84,7 +84,7 @@ const projectsData: Project[] = [
     description: `Redesigning a suite of government applications through a holistic approach to system design. This project 
     leverages a comprehensive design system and UI component library while thinking strategically about the entire 
     system architecture, user workflows, and organizational impact across multiple applications.`,
-    imgSrc: '/static/images/system-design-cover.jpg',
+    imgSrc: '/static/images/system-design-cover.png',
     href: '/projects/system-design',
     slug: 'system-design',
   },
