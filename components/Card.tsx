@@ -11,22 +11,42 @@ const Card = ({ title, description, imgSrc, href }) => (
       {imgSrc &&
         (href ? (
           <Link href={href} aria-label={`Link to ${title}`}>
-            <Image
-              alt={title}
-              src={imgSrc}
-              className="object-cover object-center md:h-36 lg:h-48"
-              width={544}
-              height={306}
-            />
+            {imgSrc.endsWith('.gif') ? (
+              <img
+                alt={title}
+                src={imgSrc}
+                className="w-full h-auto object-cover object-center md:h-36 lg:h-48"
+                style={{ display: 'block' }}
+              />
+            ) : (
+              <Image
+                alt={title}
+                src={imgSrc}
+                className="object-cover object-center md:h-36 lg:h-48"
+                width={544}
+                height={306}
+              />
+            )}
           </Link>
         ) : (
-          <Image
-            alt={title}
-            src={imgSrc}
-            className="object-cover object-center md:h-36 lg:h-48"
-            width={544}
-            height={306}
-          />
+          <>
+            {imgSrc.endsWith('.gif') ? (
+              <img
+                alt={title}
+                src={imgSrc}
+                className="w-full h-auto object-cover object-center md:h-36 lg:h-48"
+                style={{ display: 'block' }}
+              />
+            ) : (
+              <Image
+                alt={title}
+                src={imgSrc}
+                className="object-cover object-center md:h-36 lg:h-48"
+                width={544}
+                height={306}
+              />
+            )}
+          </>
         ))}
       <div className="p-6">
         <h2 className="mb-3 text-2xl leading-8 font-bold tracking-tight">
