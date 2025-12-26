@@ -6,9 +6,11 @@ import Image from './Image'
 import CustomLink from './Link'
 import TableWrapper from './TableWrapper'
 import OutcomeCard from './OutcomeCard'
+import ProjectImage from './ProjectImage'
 
 export const components: MDXComponents = {
   Image,
+  ProjectImage,
   TOCInline,
   a: CustomLink,
   pre: Pre,
