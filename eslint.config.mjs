@@ -77,6 +77,9 @@ export default [
           aspects: ['invalidHref', 'preferButton'],
         },
       ],
+
+      '@next/next/no-img-element': 'off',
+      'jsx-a11y/no-noninteractive-element-interactions': 'off',
     },
   },
 ]

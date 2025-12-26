@@ -1,19 +1,27 @@
 'use client'
 
-import { useState } from 'react'
+import React from 'react'
+
+const { useState } = React
 
 export default function ClickableImage({ src, alt, ...props }) {
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleModalKeyDown = (e) => {
+    if (e.key === 'Escape') {
+      setIsOpen(false)
+    }
+  }
+
   return (
     <>
-      <img
-        src={src}
-        alt={alt}
+      <button
         onClick={() => setIsOpen(true)}
-        className="cursor-pointer hover:opacity-90 transition-opacity"
-        {...props}
-      />
+        className="relative cursor-pointer border-0 bg-transparent p-0 transition-opacity hover:opacity-90"
+        aria-label={`View full size: ${alt}`}
+      >
+        <img src={src} alt={alt} className="h-auto max-w-full" {...props} />
+      </button>
 
       {isOpen && (
         <div
@@ -23,10 +31,14 @@ export default function ClickableImage({ src, alt, ...props }) {
               setIsOpen(false)
             }
           }}
+          onKeyDown={handleModalKeyDown}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Image viewer modal"
         >
           <button
             onClick={() => setIsOpen(false)}
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            className="absolute top-4 right-4 text-white transition-colors hover:text-gray-300"
             aria-label="Close modal"
           >
             <svg
@@ -43,12 +55,8 @@ export default function ClickableImage({ src, alt, ...props }) {
             </svg>
           </button>
 
-          <div className="relative max-w-4xl max-h-[90vh] w-full h-full flex items-center justify-center">
-            <img
-              src={src}
-              alt={alt}
-              className="max-w-full max-h-full object-contain"
-            />
+          <div className="relative flex h-full max-h-[90vh] w-full max-w-4xl items-center justify-center">
+            <img src={src} alt={alt} className="max-h-full max-w-full object-contain" />
           </div>
         </div>
       )}
