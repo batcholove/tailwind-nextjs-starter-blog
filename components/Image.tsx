@@ -6,7 +6,11 @@ import { usePathname } from 'next/navigation'
 
 const basePath = process.env.BASE_PATH
 
-const Image = ({ src, alt, ...rest }: ImageProps) => {
+interface ImageWithCaptionProps extends ImageProps {
+  caption?: string
+}
+
+const Image = ({ src, alt, caption, ...rest }: ImageWithCaptionProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const pathname = usePathname()
 
@@ -68,8 +72,13 @@ const Image = ({ src, alt, ...rest }: ImageProps) => {
             </svg>
           </button>
 
-          <div className="relative flex h-full max-h-[90vh] w-full max-w-4xl items-center justify-center">
-            <img src={fullSrc} alt={alt} className="max-h-full max-w-full object-contain" />
+          <div className="relative flex h-full max-h-[90vh] w-full max-w-4xl flex-col items-center justify-center gap-4">
+            <img
+              src={fullSrc}
+              alt={alt}
+              className="max-h-[calc(90vh-80px)] max-w-full object-contain"
+            />
+            {caption && <p className="px-4 text-center text-sm text-gray-300">{caption}</p>}
           </div>
         </div>
       )}
