@@ -32,13 +32,18 @@ const Image = ({ src, alt, caption, ...rest }: ImageWithCaptionProps) => {
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(true)}
-        className="relative cursor-pointer border-0 bg-transparent p-0 transition-opacity hover:opacity-90"
-        aria-label={`View full size: ${alt}`}
-      >
-        <NextImage src={fullSrc} alt={alt} {...rest} />
-      </button>
+      <div className="flex flex-col items-center gap-2">
+        <button
+          onClick={() => setIsOpen(true)}
+          className="relative cursor-pointer border-0 bg-transparent p-0 transition-opacity hover:opacity-90"
+          aria-label={`View full size: ${alt}`}
+        >
+          <NextImage src={fullSrc} alt={alt} {...rest} />
+        </button>
+        {caption && (
+          <p className="text-center text-sm text-gray-500 dark:text-gray-400">{caption}</p>
+        )}
+      </div>
 
       {isOpen && (
         <div
