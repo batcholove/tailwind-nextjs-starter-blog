@@ -2,11 +2,17 @@
 
 import NextImage, { ImageProps } from 'next/image'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 const basePath = process.env.BASE_PATH
 
 const Image = ({ src, alt, ...rest }: ImageProps) => {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
+
+  // Only enable modal on project detail pages (not on /projects page)
+  const isProjectDetailPage = pathname.startsWith('/projects/') && !pathname.endsWith('/projects')
+  const isClickable = isProjectDetailPage
 
   const handleModalKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Escape') {
@@ -15,6 +21,10 @@ const Image = ({ src, alt, ...rest }: ImageProps) => {
   }
 
   const fullSrc = `${basePath || ''}${src}`
+
+  if (!isClickable) {
+    return <NextImage src={fullSrc} alt={alt} {...rest} />
+  }
 
   return (
     <>
