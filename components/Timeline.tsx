@@ -20,7 +20,7 @@ export default function Timeline({ items = [] }: TimelineProps) {
           {/* Desktop layout: 3-column grid */}
           <div className="hidden grid-cols-[1fr_auto_2fr] gap-8 lg:grid">
             {/* Left: Period */}
-            <div className="pt-1">
+            <div className="pt-1 text-right">
               <p className="text-sm font-semibold tracking-wide text-gray-600 uppercase dark:text-gray-400">
                 {item.period}
               </p>
