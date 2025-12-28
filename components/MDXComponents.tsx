@@ -7,6 +7,7 @@ import CustomLink from './Link'
 import TableWrapper from './TableWrapper'
 import OutcomeCard from './OutcomeCard'
 import ProjectImage from './ProjectImage'
+import Timeline from './Timeline'
 
 export const components: MDXComponents = {
   Image,
@@ -17,4 +18,5 @@ export const components: MDXComponents = {
   table: TableWrapper,
   BlogNewsletterForm,
   OutcomeCard,
+  Timeline,
 }
