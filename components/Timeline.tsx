@@ -27,7 +27,7 @@ export default function Timeline({ items = [] }: TimelineProps) {
             </div>
 
             {/* Center: Timeline dot and line */}
-            <div className="flex flex-col items-center">
+            <div className="mt-6 flex flex-col items-center">
               <div className="relative z-10 h-4 w-4 rounded-full border-2 border-gray-400 bg-white dark:border-gray-500 dark:bg-gray-900" />
               {index < items.length - 1 && (
                 <div className="mt-4 h-20 w-0.5 bg-gradient-to-b from-gray-300 to-gray-200 dark:from-gray-600 dark:to-gray-700" />
