@@ -8,6 +8,7 @@ import TableWrapper from './TableWrapper'
 import OutcomeCard from './OutcomeCard'
 import ProjectImage from './ProjectImage'
 import Timeline from './Timeline'
+import LogoCarousel from './LogoCarousel'
 
 export const components: MDXComponents = {
   Image,
@@ -19,4 +20,5 @@ export const components: MDXComponents = {
   BlogNewsletterForm,
   OutcomeCard,
   Timeline,
+  LogoCarousel,
 }
