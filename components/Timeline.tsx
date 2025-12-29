@@ -36,7 +36,9 @@ export default function Timeline({ items = [] }: TimelineProps) {
 
             {/* Right: Title and description */}
             <div className="pt-1">
-              <h3 className="text-lg font-bold text-gray-900 dark:text-white">{item.title}</h3>
+              <h3 className="mt-3.5 text-lg font-bold text-gray-900 dark:text-white">
+                {item.title}
+              </h3>
               {item.subtitle && (
                 <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-400">{item.subtitle}</p>
               )}
