@@ -18,9 +18,9 @@ export default function Timeline({ items = [] }: TimelineProps) {
       {items.map((item, index) => (
         <div key={index} className="pb-6">
           {/* Desktop layout: 3-column grid */}
-          <div className="hidden grid-cols-[1fr_auto_2fr] gap-8 lg:grid">
+          <div className="hidden grid-cols-[w-32_auto_1fr] gap-8 lg:grid">
             {/* Left: Period */}
-            <div className="pt-1 text-right">
+            <div className="w-32 pt-1 text-right">
               <p className="text-sm font-semibold tracking-wide text-gray-600 uppercase dark:text-gray-400">
                 {item.period}
               </p>
