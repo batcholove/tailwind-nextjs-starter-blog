@@ -16,7 +16,7 @@ export default function Timeline({ items = [] }: TimelineProps) {
   return (
     <div className="space-y-0">
       {items.map((item, index) => (
-        <div key={index} className="pb-6">
+        <div key={index} className="pb-6 lg:pb-0">
           {/* Desktop layout: 3-column grid */}
           <div className="hidden grid-cols-[1fr_auto_2fr] gap-8 lg:grid">
             {/* Left: Period */}
@@ -42,7 +42,7 @@ export default function Timeline({ items = [] }: TimelineProps) {
               {item.subtitle && (
                 <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-400">{item.subtitle}</p>
               )}
-              <p className="mt-2 text-base leading-relaxed text-gray-700 dark:text-gray-300">
+              <p className="mt-2 text-base leading-relaxed text-gray-700 lg:mb-12 dark:text-gray-300">
                 {item.description}
               </p>
             </div>
