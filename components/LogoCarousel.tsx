@@ -21,7 +21,7 @@ export default function LogoCarousel({ logos, title }: LogosProps) {
       )}
 
       {/* Scrolling container */}
-      <div className="overflow-hidden rounded-lg bg-gray-50 py-8 dark:bg-gray-900/50">
+      <div className="overflow-hidden py-8">
         <div className="animate-scroll flex space-x-12">
           {/* First set of logos */}
           {logos.map((logo, index) => (
@@ -36,13 +36,17 @@ export default function LogoCarousel({ logos, title }: LogosProps) {
                   rel="noopener noreferrer"
                   className="opacity-70 transition-opacity hover:opacity-100"
                 >
-                  <img src={logo.src} alt={logo.alt} className="h-full w-full object-contain" />
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="h-full w-full object-contain dark:invert"
+                  />
                 </a>
               ) : (
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-full w-full object-contain opacity-70"
+                  className="h-full w-full object-contain opacity-70 dark:invert"
                 />
               )}
             </div>
@@ -61,13 +65,17 @@ export default function LogoCarousel({ logos, title }: LogosProps) {
                   rel="noopener noreferrer"
                   className="opacity-70 transition-opacity hover:opacity-100"
                 >
-                  <img src={logo.src} alt={logo.alt} className="h-full w-full object-contain" />
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="h-full w-full object-contain dark:invert"
+                  />
                 </a>
               ) : (
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="h-full w-full object-contain opacity-70"
+                  className="h-full w-full object-contain opacity-70 dark:invert"
                 />
               )}
             </div>
