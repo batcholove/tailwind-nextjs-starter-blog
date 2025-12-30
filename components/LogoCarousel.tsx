@@ -109,10 +109,6 @@ export default function LogoCarousel({ logos, title }: LogosProps) {
           animation: scroll 25.2s linear infinite;
           will-change: transform;
         }
-
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
       `}</style>
     </div>
   )
