@@ -21,7 +21,7 @@ export default function Hero() {
         {/* Main heading */}
         <div className="space-y-3">
           <h1 className="text-4xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
-            Transformative Design Starts with Listening
+            Transformative design starts with listening
           </h1>
           <p className="text-xl leading-8 text-gray-600 dark:text-gray-400">
             I partner with teams and organizations to unlock clarity in complexity and shape
