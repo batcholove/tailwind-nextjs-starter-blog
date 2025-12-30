@@ -1,5 +1,9 @@
 'use client'
 
+import Image from 'next/image'
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH
+
 export interface Logo {
   src: string
   alt: string
@@ -36,16 +40,20 @@ export default function LogoCarousel({ logos, title }: LogosProps) {
                   rel="noopener noreferrer"
                   className="opacity-70 transition-opacity hover:opacity-100"
                 >
-                  <img
-                    src={logo.src}
+                  <Image
+                    src={`${basePath || ''}${logo.src}`}
                     alt={logo.alt}
+                    width={128}
+                    height={64}
                     className="h-full w-full object-contain dark:invert"
                   />
                 </a>
               ) : (
-                <img
-                  src={logo.src}
+                <Image
+                  src={`${basePath || ''}${logo.src}`}
                   alt={logo.alt}
+                  width={128}
+                  height={64}
                   className="h-full w-full object-contain opacity-70 dark:invert"
                 />
               )}
@@ -65,16 +73,20 @@ export default function LogoCarousel({ logos, title }: LogosProps) {
                   rel="noopener noreferrer"
                   className="opacity-70 transition-opacity hover:opacity-100"
                 >
-                  <img
-                    src={logo.src}
+                  <Image
+                    src={`${basePath || ''}${logo.src}`}
                     alt={logo.alt}
+                    width={128}
+                    height={64}
                     className="h-full w-full object-contain dark:invert"
                   />
                 </a>
               ) : (
-                <img
-                  src={logo.src}
+                <Image
+                  src={`${basePath || ''}${logo.src}`}
                   alt={logo.alt}
+                  width={128}
+                  height={64}
                   className="h-full w-full object-contain opacity-70 dark:invert"
                 />
               )}
