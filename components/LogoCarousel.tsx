@@ -26,12 +26,12 @@ export default function LogoCarousel({ logos, title }: LogosProps) {
 
       {/* Scrolling container */}
       <div className="overflow-hidden py-8">
-        <div className="animate-scroll flex space-x-12">
+        <div className="animate-scroll flex space-x-2">
           {/* First set of logos */}
           {logos.map((logo, index) => (
             <div
               key={`${index}-1`}
-              className="flex h-16 w-32 flex-shrink-0 items-center justify-center"
+              className="flex h-32 w-48 flex-shrink-0 items-center justify-center"
             >
               {logo.url ? (
                 <a
@@ -64,7 +64,7 @@ export default function LogoCarousel({ logos, title }: LogosProps) {
           {logos.map((logo, index) => (
             <div
               key={`${index}-2`}
-              className="flex h-16 w-32 flex-shrink-0 items-center justify-center"
+              className="flex h-32 w-48 flex-shrink-0 items-center justify-center"
             >
               {logo.url ? (
                 <a
@@ -101,12 +101,13 @@ export default function LogoCarousel({ logos, title }: LogosProps) {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(calc(-100% / 2));
+            transform: translateX(-1800px);
           }
         }
 
         .animate-scroll {
-          animation: scroll 30s linear infinite;
+          animation: scroll 25.2s linear infinite;
+          will-change: transform;
         }
 
         .animate-scroll:hover {
