@@ -1,6 +1,7 @@
 'use client'
 
 import Link from './Link'
+import TypingAnimation from './TypingAnimation'
 
 export default function Hero() {
   const handleScroll = (sectionId: string) => {
@@ -15,13 +16,28 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-center space-y-4 text-center">
         {/* Main heading */}
         <div className="space-y-3">
-          <h1 className="text-4xl leading-9 font-extrabold tracking-tight text-black sm:text-5xl sm:leading-10 md:text-6xl md:leading-14 dark:text-white">
-            Transformative design starts with listening
-          </h1>
-          <p className="text-xl leading-8 text-black dark:text-white">
-            I partner with teams and organizations to unlock clarity in complexity and shape
-            experiences that resonate with real people.
+          <p className="text-lg font-bold text-black sm:text-xl md:text-2xl dark:text-white">
+            Ryan Batch
           </p>
+          <p className="text-4xl font-black text-black sm:text-5xl md:text-6xl lg:text-7xl dark:text-white">
+            Multidisciplinary Design Strategist
+          </p>
+          <h1 className="text-2xl leading-8 font-semibold tracking-tight text-black sm:text-3xl sm:leading-9 md:text-4xl md:leading-10 dark:text-white">
+            I design outcomes across products and experiences{' '}
+            <TypingAnimation
+              prefix=""
+              phrases={[
+                'with teams.',
+                'with people.',
+                'with empathy.',
+                'with intention.',
+                'with strategy.',
+              ]}
+              speed={80}
+              backspaceSpeed={40}
+              delayBetweenPhrases={2000}
+            />
+          </h1>
         </div>
 
         {/* CTA Buttons */}
