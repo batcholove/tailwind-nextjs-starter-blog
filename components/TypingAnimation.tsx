@@ -67,7 +67,7 @@ export default function TypingAnimation({
   ])
 
   return (
-    <span className="text-primary-500 dark:text-primary-400">
+    <span className="text-gray-700 dark:text-gray-400">
       {displayText}
       <span className="cursor-blink">|</span>
     </span>

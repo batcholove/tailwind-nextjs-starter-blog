@@ -43,16 +43,10 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-col justify-center gap-4 pt-6 sm:flex-row">
           <button
-            onClick={() => handleScroll('about-section')}
+            onClick={() => handleScroll('philosophy-section')}
             className="inline-flex items-center justify-center rounded-md bg-gray-900 px-8 py-3 text-base font-medium text-white transition-colors hover:bg-gray-700 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200"
           >
-            Learn More
-          </button>
-          <button
-            onClick={() => handleScroll('projects-section')}
-            className="inline-flex items-center justify-center rounded-md border border-gray-900 px-8 py-3 text-base font-medium text-gray-900 transition-colors hover:bg-gray-100 dark:border-gray-100 dark:text-gray-100 dark:hover:bg-gray-800"
-          >
-            View Work
+            See how I work
           </button>
         </div>
       </div>
