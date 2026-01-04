@@ -184,22 +184,18 @@ export default function CapabilitiesSection() {
           </div>
         </div>
 
-        {/* Scroll Down Button - scrolls to bottom of page or footer */}
+        {/* Scroll Down Button - navigates to About page */}
         <div className="flex justify-center pt-12">
-          <button
-            onClick={() => {
-              // Scroll to bottom of page or footer
-              window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })
-            }}
+          <a
+            href="/about"
             className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-black bg-white px-8 py-3 text-base font-medium text-black transition-colors hover:bg-gray-100 dark:border-white dark:bg-white dark:text-black dark:hover:bg-gray-100"
           >
-            Continue
+            What I bring
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
               className="h-5 w-5"
-              style={{ transform: 'rotate(90deg)' }}
             >
               <path
                 fillRule="evenodd"
@@ -207,7 +203,7 @@ export default function CapabilitiesSection() {
                 clipRule="evenodd"
               />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </section>

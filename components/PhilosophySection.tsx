@@ -27,7 +27,7 @@ export default function PhilosophySection() {
       <div className="mx-auto max-w-3xl xl:max-w-5xl">
         <div className="space-y-8">
           {/* Headline */}
-          <h2 className="text-4xl leading-[1.15] font-extrabold tracking-tight text-black sm:text-5xl md:text-6xl dark:text-white">
+          <h2 className="text-left text-4xl leading-[1.15] font-extrabold tracking-tight text-black sm:text-5xl md:text-6xl dark:text-white">
             Good design scales across disciplines.
           </h2>
 
@@ -67,7 +67,7 @@ export default function PhilosophySection() {
             <img
               src="/static/images/beyond-ux-ui.png"
               alt="Design disciplines visualization"
-              className="h-96 w-full max-w-3xl object-cover"
+              className="h-80 w-80 object-cover"
             />
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function PhilosophySection() {
             onClick={() => handleScroll('featured-work-section')}
             className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-black bg-white px-8 py-3 text-base font-medium text-black transition-colors hover:bg-gray-100 dark:border-white dark:bg-white dark:text-black dark:hover:bg-gray-100"
           >
-            Continue
+            What I built
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
