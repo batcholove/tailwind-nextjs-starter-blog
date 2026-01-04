@@ -4,8 +4,17 @@ export default function PhilosophySection() {
   return (
     <section
       id="philosophy-section"
-      className="w-full bg-gray-100 px-4 py-12 sm:px-6 md:py-24 lg:py-32 xl:px-0 dark:bg-gray-900"
+      className="w-full bg-gray-100 bg-cover bg-top bg-no-repeat px-4 py-12 sm:px-6 md:py-24 lg:py-32 xl:px-0 dark:bg-gray-900"
+      style={{
+        backgroundImage: 'url(/static/images/philosophy-image-bkgd-light.png)',
+        minHeight: '100vh',
+      }}
     >
+      <style>{`
+        .dark #philosophy-section {
+          background-image: url(/static/images/philosophy-image-bkgd-dark.png) !important;
+        }
+      `}</style>
       <div className="mx-auto max-w-3xl xl:max-w-5xl">
         <div className="space-y-8">
           {/* Headline */}

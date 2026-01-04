@@ -23,15 +23,17 @@ export default function TypingAnimation({
   const [charIndex, setCharIndex] = useState(0)
 
   const currentPhrase = phrases[currentPhraseIndex]
+  const fullText = prefix + currentPhrase
+  const totalLength = fullText.length
 
   useEffect(() => {
     let timeout: NodeJS.Timeout
 
     if (isTyping) {
       // Typing phase
-      if (charIndex < currentPhrase.length) {
+      if (charIndex < totalLength) {
         timeout = setTimeout(() => {
-          setDisplayText(prefix + currentPhrase.substring(0, charIndex + 1))
+          setDisplayText(fullText.substring(0, charIndex + 1))
           setCharIndex(charIndex + 1)
         }, speed)
       } else {
@@ -44,11 +46,11 @@ export default function TypingAnimation({
       // Backspacing phase
       if (charIndex > 0) {
         timeout = setTimeout(() => {
-          setDisplayText(prefix + currentPhrase.substring(0, charIndex - 1))
+          setDisplayText(fullText.substring(0, charIndex - 1))
           setCharIndex(charIndex - 1)
         }, backspaceSpeed)
       } else {
-        // Finished backspacing, move to next phrase
+        // Finished backspacing completely, move to next phrase
         setCurrentPhraseIndex((prev) => (prev + 1) % phrases.length)
         setIsTyping(true)
       }
@@ -64,10 +66,12 @@ export default function TypingAnimation({
     backspaceSpeed,
     delayBetweenPhrases,
     phrases.length,
+    fullText,
+    totalLength,
   ])
 
   return (
-    <span className="text-gray-700 dark:text-gray-400">
+    <span className="text-primary-700 dark:text-primary-400">
       {displayText}
       <span className="cursor-blink">|</span>
     </span>
