@@ -3,7 +3,7 @@ import Link from './Link'
 
 const FeaturedCard = ({ title, description, imgSrc, href }) => (
   <Link href={href} aria-label={`Link to ${title}`} className="h-full w-full">
-    <div className="flex h-full cursor-pointer flex-col overflow-hidden rounded-md border-2 border-gray-200/60 transition-all duration-200 hover:border-gray-300 hover:shadow-lg dark:border-gray-700/60 dark:hover:border-gray-600 dark:hover:shadow-lg">
+    <div className="flex h-full cursor-pointer flex-col overflow-hidden rounded-md border-2 border-gray-200/60 bg-white transition-all duration-200 hover:border-gray-300 hover:shadow-lg dark:border-gray-700/60 dark:bg-gray-800 dark:hover:border-gray-600 dark:hover:shadow-lg">
       {imgSrc && (
         <>
           {imgSrc.endsWith('.gif') ? (

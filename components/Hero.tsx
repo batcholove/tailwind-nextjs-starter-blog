@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="flex flex-col justify-center gap-4 pt-6 sm:flex-row">
           <button
             onClick={() => handleScroll('philosophy-section')}
-            className="bg-primary-700 hover:bg-primary-800 dark:bg-primary-400 dark:text-primary-950 dark:hover:bg-primary-300 inline-flex items-center justify-center gap-2 rounded-md px-8 py-3 text-base font-medium text-white transition-colors"
+            className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-black bg-white px-8 py-3 text-base font-medium text-black transition-colors hover:bg-gray-100 dark:border-white dark:bg-white dark:text-black dark:hover:bg-gray-100"
           >
             See how I work
             <svg
