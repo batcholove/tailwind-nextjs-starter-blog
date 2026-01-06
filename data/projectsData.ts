@@ -39,7 +39,7 @@ const projectsData: Project[] = [
     description: `Explore the importance of design systems and UI component libraries in bridging the gap between 
     design and development. A well-crafted design system ensures consistency, accelerates development, reduces 
     miscommunication, and creates a shared language that empowers both designers and developers to build better products.`,
-    imgSrc: '/static/images/design-systems-cover.gif',
+    imgSrc: '/static/images/design-systems-cover.png',
     href: '/projects/design-systems',
     slug: 'design-systems',
   },
