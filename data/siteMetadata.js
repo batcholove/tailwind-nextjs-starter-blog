@@ -5,7 +5,7 @@ const siteMetadata = {
   headerTitle: 'Ryan Batch',
   description: 'A portfolio site showcasing my design projects and case studies.',
   language: 'en-us',
-  theme: 'dark', // system, dark or light
+  theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
