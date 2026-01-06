@@ -39,7 +39,8 @@ export default function PhilosophySection() {
             </p>
           </div>
 
-          {/* CTA */}
+          {/* CTA - HIDDEN: Learn more about my approach button */}
+          {/* 
           <div>
             <Link
               href="/about"
@@ -61,6 +62,7 @@ export default function PhilosophySection() {
               </svg>
             </Link>
           </div>
+          */}
 
           {/* Beyond UX/UI Image */}
           <div className="flex justify-start overflow-hidden pt-8">
@@ -74,25 +76,12 @@ export default function PhilosophySection() {
 
         {/* Scroll Down Button */}
         <div className="flex justify-center pt-12">
-          <button
-            onClick={() => handleScroll('featured-work-section')}
+          <Link
+            href="/projects-experimental"
             className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-black bg-white px-8 py-3 text-base font-medium text-black transition-colors hover:bg-gray-100 dark:border-white dark:bg-white dark:text-black dark:hover:bg-gray-100"
           >
-            What I built
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="h-5 w-5"
-              style={{ transform: 'rotate(90deg)' }}
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586L10.293 4.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
+            See All Work
+          </Link>
         </div>
       </div>
     </section>

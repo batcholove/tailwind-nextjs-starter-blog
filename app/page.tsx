@@ -25,11 +25,11 @@ export default function Page() {
       {/* Philosophy Section */}
       <PhilosophySection />
 
-      {/* Featured Work Section */}
-      <FeaturedWorkSection />
-
       {/* Capabilities Section */}
       <CapabilitiesSection />
+
+      {/* Featured Work Section */}
+      <FeaturedWorkSection />
     </>
   )
 }

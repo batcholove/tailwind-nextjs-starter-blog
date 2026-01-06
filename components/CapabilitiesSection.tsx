@@ -134,7 +134,7 @@ export default function CapabilitiesSection() {
   return (
     <section
       id="capabilities-section"
-      className="w-full bg-gray-100 bg-cover bg-top bg-no-repeat px-4 py-12 sm:px-6 md:py-24 lg:py-32 xl:px-0 dark:bg-gray-900"
+      className="w-full bg-white bg-cover bg-top bg-no-repeat px-4 py-12 sm:px-6 md:py-24 lg:py-32 xl:px-0 dark:bg-gray-950"
       style={{
         backgroundImage: 'url(/static/images/philosophy-image-bkgd-light.png)',
         minHeight: '100vh',
@@ -161,6 +161,7 @@ export default function CapabilitiesSection() {
           <CapabilitiesCarousel capabilities={capabilities} />
 
           {/* CTA */}
+          {/* Hidden button: See how these skills show up in real work
           <div>
             <Link
               href="/projects"
@@ -182,6 +183,7 @@ export default function CapabilitiesSection() {
               </svg>
             </Link>
           </div>
+          */}
         </div>
 
         {/* Scroll Down Button - navigates to About page */}
@@ -190,19 +192,7 @@ export default function CapabilitiesSection() {
             href="/about"
             className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-black bg-white px-8 py-3 text-base font-medium text-black transition-colors hover:bg-gray-100 dark:border-white dark:bg-white dark:text-black dark:hover:bg-gray-100"
           >
-            What I bring
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="h-5 w-5"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586L10.293 4.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
+            More About Me
           </a>
         </div>
       </div>

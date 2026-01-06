@@ -44,15 +44,6 @@ const projectsData: Project[] = [
     slug: 'design-systems',
   },
   {
-    title: 'Interface FLOR',
-    description: `Designing modular flooring solutions while building digital design tools and improving operations. 
-    This project focused on increasing sales, customer and employee satisfaction while reducing returns through 
-    strategic UX design and operational excellence.`,
-    imgSrc: '/static/images/interface-flor-cover.jpg',
-    href: '/projects/interface-flor',
-    slug: 'interface-flor',
-  },
-  {
     title: 'Esri maps & layer preferences',
     description: `A compelling design challenge and innovative solution. This project showcases 
     strategic thinking, user research, and thoughtful design execution that resulted 
@@ -60,6 +51,15 @@ const projectsData: Project[] = [
     imgSrc: '/static/images/layer-preferences-cover.png',
     href: '/projects/esri-maps-layer-preferences',
     slug: 'esri-maps-layer-preferences',
+  },
+  {
+    title: 'Interface FLOR',
+    description: `Designing modular flooring solutions while building digital design tools and improving operations. 
+    This project focused on increasing sales, customer and employee satisfaction while reducing returns through 
+    strategic UX design and operational excellence.`,
+    imgSrc: '/static/images/interface-flor-cover.jpg',
+    href: '/projects/interface-flor',
+    slug: 'interface-flor',
   },
   {
     title: 'Interior design & installations',
@@ -70,15 +70,15 @@ const projectsData: Project[] = [
     href: '/projects/interior-design-installations',
     slug: 'interior-design-installations',
   },
-  {
-    title: 'Abba haircare brand update',
-    description: `A comprehensive brand refresh for a beloved haircare line. This project involved 
-    modernizing visual identity, packaging design, and digital presence while 
-    maintaining the brand's heritage and customer loyalty.`,
-    imgSrc: '/static/images/ah-cover.png',
-    href: '/projects/abba-haircare-brand-update',
-    slug: 'abba-haircare-brand-update',
-  },
+  // {
+  //   title: 'Abba haircare brand update',
+  //   description: `A comprehensive brand refresh for a beloved haircare line. This project involved
+  //   modernizing visual identity, packaging design, and digital presence while
+  //   maintaining the brand's heritage and customer loyalty.`,
+  //   imgSrc: '/static/images/ah-cover.png',
+  //   href: '/projects/abba-haircare-brand-update',
+  //   slug: 'abba-haircare-brand-update',
+  // },
   {
     title: 'Logo design & marketing',
     description: `Discover the importance of a strong logo design in connecting with customers and communicating 

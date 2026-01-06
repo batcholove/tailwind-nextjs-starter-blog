@@ -2,7 +2,7 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="w-full p-4 sm:w-1/2 md:w-1/3">
+  <div className="w-full p-4 sm:w-1/2 lg:w-1/2">
     <div
       className={`${
         imgSrc && 'h-full'
@@ -15,7 +15,7 @@ const Card = ({ title, description, imgSrc, href }) => (
               <img
                 alt={title}
                 src={imgSrc}
-                className="w-full h-auto object-cover object-center md:h-36 lg:h-48"
+                className="h-auto w-full object-cover object-center md:h-36 lg:h-48"
                 style={{ display: 'block' }}
               />
             ) : (
@@ -34,7 +34,7 @@ const Card = ({ title, description, imgSrc, href }) => (
               <img
                 alt={title}
                 src={imgSrc}
-                className="w-full h-auto object-cover object-center md:h-36 lg:h-48"
+                className="h-auto w-full object-cover object-center md:h-36 lg:h-48"
                 style={{ display: 'block' }}
               />
             ) : (
