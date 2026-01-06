@@ -445,7 +445,7 @@ export default function ExperimentalProjectDetail({
       {/* Back to Projects Button */}
       <div className="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
         <Link
-          href="/projects"
+          href="/projects-experimental"
           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
         >
           <svg
@@ -466,20 +466,21 @@ export default function ExperimentalProjectDetail({
 
       {/* Hero Section with Summary */}
       <div className="relative w-full">
-        {/* Background Image */}
+        {/* Background image with 50% opacity */}
         {project.imgSrc && (
-          <div className="absolute inset-0 h-full w-full">
-            <Image
-              src={project.imgSrc}
-              alt={project.title}
-              fill
-              className="h-full w-full object-cover opacity-50"
-              priority
-            />
-            {/* Dark overlay for readability */}
-            <div className="absolute inset-0 bg-black/70 dark:bg-black/80"></div>
-          </div>
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${project.imgSrc})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              opacity: 0.5,
+            }}
+          ></div>
         )}
+
+        {/* Background overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/80"></div>
 
         {/* Content */}
         <div className="relative z-10 mx-auto max-w-5xl px-4 py-16 sm:px-6 md:py-32">
@@ -693,7 +694,7 @@ export default function ExperimentalProjectDetail({
           <div className="mx-auto flex max-w-5xl justify-between gap-8 px-4 sm:px-6">
             {previousProject ? (
               <Link
-                href={`/projects/${previousProject.slug}`}
+                href={`/projects-experimental/${previousProject.slug}`}
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
               >
                 <svg
@@ -715,7 +716,7 @@ export default function ExperimentalProjectDetail({
             )}
             {nextProject ? (
               <Link
-                href={`/projects/${nextProject.slug}`}
+                href={`/projects-experimental/${nextProject.slug}`}
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
               >
                 Next project
