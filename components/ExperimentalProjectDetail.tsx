@@ -445,7 +445,7 @@ export default function ExperimentalProjectDetail({
       {/* Back to Projects Button */}
       <div className="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
         <Link
-          href="/projects-experimental"
+          href="/projects"
           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
         >
           <svg
@@ -693,7 +693,7 @@ export default function ExperimentalProjectDetail({
           <div className="mx-auto flex max-w-5xl justify-between gap-8 px-4 sm:px-6">
             {previousProject ? (
               <Link
-                href={`/projects-experimental/${previousProject.slug}`}
+                href={`/projects/${previousProject.slug}`}
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
               >
                 <svg
@@ -715,7 +715,7 @@ export default function ExperimentalProjectDetail({
             )}
             {nextProject ? (
               <Link
-                href={`/projects-experimental/${nextProject.slug}`}
+                href={`/projects/${nextProject.slug}`}
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
               >
                 Next project

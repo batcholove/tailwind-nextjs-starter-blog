@@ -77,7 +77,7 @@ export default function PhilosophySection() {
         {/* Scroll Down Button */}
         <div className="flex justify-center pt-12">
           <Link
-            href="/projects-experimental"
+            href="/projects"
             className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-black bg-white px-8 py-3 text-base font-medium text-black transition-colors hover:bg-gray-100 dark:border-white dark:bg-white dark:text-black dark:hover:bg-gray-100"
           >
             See All Work

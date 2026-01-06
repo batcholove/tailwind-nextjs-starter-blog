@@ -18,16 +18,16 @@ const featuredProjects: FeaturedProject[] = [
     href: '/projects/growing-ux-maturity',
   },
   {
-    title: 'Design Systems',
-    description: 'Consistency that accelerates delivery',
-    imgSrc: '/static/images/design-systems-cover.gif',
-    href: '/projects/design-systems',
-  },
-  {
     title: 'System Design',
     description: 'Connecting experiences end to end',
     imgSrc: '/static/images/system-design-cover.png',
     href: '/projects/system-design',
+  },
+  {
+    title: 'Putting People First',
+    description: 'Human-centered design through personas',
+    imgSrc: '/static/images/archetypes-cover.png',
+    href: '/projects/putting-people-first',
   },
 ]
 
@@ -107,7 +107,7 @@ export default function FeaturedWorkSection() {
         {/* Scroll Down Button */}
         <div className="flex justify-center pt-12">
           <Link
-            href="/projects-experimental"
+            href="/projects"
             className="inline-flex items-center justify-center gap-2 rounded-md border-2 border-black bg-white px-8 py-3 text-base font-medium text-black transition-colors hover:bg-gray-100 dark:border-white dark:bg-white dark:text-black dark:hover:bg-gray-100"
           >
             See All Work
