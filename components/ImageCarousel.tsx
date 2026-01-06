@@ -57,7 +57,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
           }
         }
       `}</style>
-      <div className="relative overflow-hidden rounded-lg border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-950">
+      <div className="hover:border-primary-500 dark:hover:border-primary-400 relative overflow-hidden rounded-lg border-2 border-gray-300 bg-white transition-all duration-200 hover:shadow-lg dark:border-gray-600 dark:bg-gray-950">
         {/* Current image sliding out to the left */}
         <div
           className="absolute inset-0 flex min-h-[400px] w-full items-center justify-center bg-white dark:bg-gray-950"

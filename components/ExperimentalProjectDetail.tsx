@@ -394,13 +394,13 @@ function parseApproachSection(text: string) {
         </div>
         {carouselContent && <ImageCarousel images={carouselContent} />}
         {imageContent && (
-          <div className="mt-8 w-full">
+          <div className="hover:border-primary-500 dark:hover:border-primary-400 mt-8 w-full overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600">
             <Image
               src={imageContent.src}
               alt={imageContent.alt}
               width={1000}
               height={600}
-              className="h-auto w-full rounded-lg"
+              className="h-auto w-full"
             />
           </div>
         )}
@@ -465,7 +465,7 @@ export default function ExperimentalProjectDetail({
       </div>
 
       {/* Hero Section with Summary */}
-      <div className="relative w-full">
+      <div className="hover:border-primary-500 dark:hover:border-primary-400 relative w-full overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600">
         {/* Background image with 50% opacity */}
         {project.imgSrc && (
           <div
@@ -651,13 +651,13 @@ export default function ExperimentalProjectDetail({
                       <>
                         {parseTextWithBullets(textContent)}
                         {singleImages[imageType as keyof typeof singleImages] && (
-                          <div className="mt-8 w-full">
+                          <div className="hover:border-primary-500 dark:hover:border-primary-400 mt-8 w-full overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600">
                             <Image
                               src={singleImages[imageType as keyof typeof singleImages].src}
                               alt={singleImages[imageType as keyof typeof singleImages].alt}
                               width={1000}
                               height={600}
-                              className="h-auto w-full rounded-lg"
+                              className="h-auto w-full"
                             />
                           </div>
                         )}
