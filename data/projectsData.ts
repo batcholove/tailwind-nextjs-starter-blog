@@ -13,7 +13,7 @@ const projectsData: Project[] = [
     explores building a design-centric culture, establishing design systems, and 
     empowering teams to make user-centered decisions at every level.`,
     imgSrc: '/static/images/ux-maturity-cover.png',
-    href: '/projects/growing-ux-maturity',
+    href: '/projects-experimental/growing-ux-maturity',
     slug: 'growing-ux-maturity',
   },
   {
@@ -22,7 +22,7 @@ const projectsData: Project[] = [
     leverages a comprehensive design system and UI component library while thinking strategically about the entire 
     system architecture, user workflows, and organizational impact across multiple applications.`,
     imgSrc: '/static/images/system-design-cover.png',
-    href: '/projects/system-design',
+    href: '/projects-experimental/system-design',
     slug: 'system-design',
   },
   {
@@ -31,7 +31,7 @@ const projectsData: Project[] = [
     This project demonstrates how to build shared mental models that guide product 
     decisions and foster empathy across teams.`,
     imgSrc: '/static/images/archetypes-cover.png',
-    href: '/projects/putting-people-first',
+    href: '/projects-experimental/putting-people-first',
     slug: 'putting-people-first',
   },
   {
@@ -40,7 +40,7 @@ const projectsData: Project[] = [
     design and development. A well-crafted design system ensures consistency, accelerates development, reduces 
     miscommunication, and creates a shared language that empowers both designers and developers to build better products.`,
     imgSrc: '/static/images/design-systems-cover.gif',
-    href: '/projects/design-systems',
+    href: '/projects-experimental/design-systems',
     slug: 'design-systems',
   },
   {
@@ -49,7 +49,7 @@ const projectsData: Project[] = [
     strategic thinking, user research, and thoughtful design execution that resulted 
     in meaningful user engagement and business impact.`,
     imgSrc: '/static/images/layer-preferences-cover.png',
-    href: '/projects/esri-maps-layer-preferences',
+    href: '/projects-experimental/esri-maps-layer-preferences',
     slug: 'esri-maps-layer-preferences',
   },
   {
@@ -58,7 +58,7 @@ const projectsData: Project[] = [
     This project focused on increasing sales, customer and employee satisfaction while reducing returns through 
     strategic UX design and operational excellence.`,
     imgSrc: '/static/images/interface-flor-cover.jpg',
-    href: '/projects/interface-flor',
+    href: '/projects-experimental/interface-flor',
     slug: 'interface-flor',
   },
   {
@@ -67,7 +67,7 @@ const projectsData: Project[] = [
     principles apply across any facet of design. A skilled designer can transfer foundational knowledge from one 
     discipline to another, creating cohesive, thoughtful experiences whether designing spaces or interfaces.`,
     imgSrc: '/static/images/interior-design-installations-cover.jpg',
-    href: '/projects/interior-design-installations',
+    href: '/projects-experimental/interior-design-installations',
     slug: 'interior-design-installations',
   },
   // {
@@ -85,7 +85,7 @@ const projectsData: Project[] = [
     the brand's values. This project explores how thoughtful logo design creates lasting impressions, builds brand 
     recognition, and becomes the visual cornerstone of a company's identity.`,
     imgSrc: '/static/images/logo-design-marketing-cover.png',
-    href: '/projects/logo-design-marketing',
+    href: '/projects-experimental/logo-design-marketing',
     slug: 'logo-design-marketing',
   },
 ]

@@ -15,19 +15,19 @@ const featuredProjects: FeaturedProject[] = [
     title: 'Growing UX Maturity',
     description: 'Scaling design across teams',
     imgSrc: '/static/images/ux-maturity-cover.png',
-    href: '/projects/growing-ux-maturity',
+    href: '/projects-experimental/growing-ux-maturity',
   },
   {
     title: 'System Design',
     description: 'Connecting experiences end to end',
     imgSrc: '/static/images/system-design-cover.png',
-    href: '/projects/system-design',
+    href: '/projects-experimental/system-design',
   },
   {
     title: 'Putting People First',
     description: 'Human-centered design through personas',
     imgSrc: '/static/images/archetypes-cover.png',
-    href: '/projects/putting-people-first',
+    href: '/projects-experimental/putting-people-first',
   },
 ]
 
