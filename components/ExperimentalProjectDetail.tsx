@@ -465,7 +465,7 @@ export default function ExperimentalProjectDetail({
       </div>
 
       {/* Hero Section with Summary */}
-      <div className="hover:border-primary-500 dark:hover:border-primary-400 relative w-full overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600">
+      <div className="relative w-full">
         {/* Background image with 50% opacity */}
         {project.imgSrc && (
           <div
