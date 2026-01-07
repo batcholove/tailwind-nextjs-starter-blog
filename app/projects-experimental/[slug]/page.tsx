@@ -148,9 +148,9 @@ const projectStructuredData: Record<string, StructuredProject> = {
     outcome:
       'The experience became easier to understand, faster to use, and easier to teach. Language was simplified. Interactions aligned with familiar patterns. New capabilities were introduced without increasing cognitive load.',
     overview:
-      'Mapping tools were powerful but difficult to use. Legacy patterns, dense terminology, and limited flexibility created friction for both new and experienced users. This work focused on redesigning a critical part of the mapping experience so it aligned with how users think, speak, and work.',
+      "About the project\nAt the USDA's Natural Resources Conservation Service, mapping tools were powerful but difficult to use. Legacy patterns, dense terminology, and limited flexibility created friction for both new and experienced users. This work focused on redesigning a critical part of the mapping experience so it aligned with how users think, speak, and work.\n\nProject Overview\nMapping workflows were central to the product suite and tightly connected to other systems. Even small improvements had an outsized impact.\n\nLayer Preferences was a high-friction area that affected daily workflows, training, and support.\n\n<strong>The opportunity was to reduce complexity without reducing capability.</strong>",
     challenge:
-      'Users struggled with layer management in traditional map interfaces. The existing solution was feature-rich but confusing, leading to user frustration and reduced adoption of key capabilities.',
+      '## The Challenge\n• Dense, technical language\n• Legacy interaction patterns\n• Limited discoverability\n• High training overhead\n• Inconsistent behavior across tools\n\n<strong>Users had to adapt to the system instead of the system adapting to users.</strong>\n\n[IMAGE:layer-original-ui]',
     approach:
       'We conducted extensive user research to understand how users conceptualized layers and data relationships. This informed our design direction and helped us create a more intuitive interface.',
     whatChanged:
