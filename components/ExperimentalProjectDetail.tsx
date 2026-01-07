@@ -322,7 +322,6 @@ function parseApproachSection(text: string) {
       { src: '/static/images/layer-actions-update.png', alt: 'Layer actions update' },
       { src: '/static/images/layer-sort-update.png', alt: 'Layer sort update' },
       { src: '/static/images/layer-basemap-update.png', alt: 'Layer basemap update' },
-      { src: '/static/images/layer-search-update.png', alt: 'Layer search update' },
     ],
     'layer-drawer-animate': [
       { src: '/static/images/layer-drawer-annimate-1.png', alt: 'Layer drawer animation 1' },
@@ -448,7 +447,9 @@ function parseApproachSection(text: string) {
         {carouselContent && (
           <ImageCarousel
             images={carouselContent}
-            isAnimated={carouselType === 'layer-drawer-animate'}
+            isAnimated={
+              carouselType === 'layer-drawer-animate' || carouselType === 'layer-ui-updates'
+            }
           />
         )}
         {imageContent && (
@@ -758,6 +759,32 @@ export default function ExperimentalProjectDetail({
                           alt: 'System Design Cover',
                         },
                       ],
+                      'layer-drawer-animate': [
+                        {
+                          src: '/static/images/layer-drawer-annimate-1.png',
+                          alt: 'Layer drawer animation 1',
+                        },
+                        {
+                          src: '/static/images/layer-drawer-annimate-2.png',
+                          alt: 'Layer drawer animation 2',
+                        },
+                        {
+                          src: '/static/images/layer-drawer-annimate-3.png',
+                          alt: 'Layer drawer animation 3',
+                        },
+                        {
+                          src: '/static/images/layer-drawer-annimate-4.png',
+                          alt: 'Layer drawer animation 4',
+                        },
+                        {
+                          src: '/static/images/layer-drawer-annimate-5.png',
+                          alt: 'Layer drawer animation 5',
+                        },
+                        {
+                          src: '/static/images/layer-drawer-annimate-6.png',
+                          alt: 'Layer drawer animation 6',
+                        },
+                      ],
                     }
                     const parts = project.whatChanged.split(/\[CAROUSEL:[^\]]+\]/)
                     const textContent = parts[0]
@@ -774,6 +801,7 @@ export default function ExperimentalProjectDetail({
                                   carouselType as keyof typeof outcomeCarouselImages
                                 ]
                               }
+                              isAnimated={carouselType === 'layer-drawer-animate'}
                             />
                           </div>
                         )}

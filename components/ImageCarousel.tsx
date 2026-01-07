@@ -22,7 +22,7 @@ export default function ImageCarousel({
       // For animated carousels, cycle through frames quickly
       const interval = setInterval(() => {
         setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
-      }, 300) // Change frame every 300ms for animation effect
+      }, 1600) // Change frame every 1600ms for animation effect
       return () => clearInterval(interval)
     } else {
       // For regular carousels, use the slide animation

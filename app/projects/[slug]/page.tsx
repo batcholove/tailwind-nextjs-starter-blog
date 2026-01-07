@@ -156,7 +156,7 @@ const projectStructuredData: Record<string, StructuredProject> = {
     whatChanged:
       'The redesigned interface made layer management intuitive and powerful. Users could accomplish complex tasks more easily.\n\n• Reduced cognitive load\n• Faster onboarding for new users\n• Easier training and support\n• Clearer alignment with other tools in the suite\n\n**The redesign demonstrated how small, focused improvements could have system-level impact.**\n\n[CAROUSEL:layer-drawer-animate]',
     whyMatters:
-      'Simplifying complex tools makes them accessible to more users. Clear language and familiar patterns reduce cognitive load. Strategic thinking about system design prevents fragmented solutions.',
+      "Complex tools don't have to feel complicated. By combining human-centered language, familiar interaction patterns, and system-aware design we created an experience that respected both user needs and technical constraints.",
   },
   'interior-design-installations': {
     title: 'Interior Design & Installations',
