@@ -249,6 +249,7 @@ export default async function ProjectPageExperimental({ params }: ProjectPagePro
       project={project}
       previousProject={previousProject}
       nextProject={nextProject}
+      currentSlug={slug}
     />
   )
 }

@@ -23,6 +23,7 @@ interface ExperimentalProjectDetailProps {
   }
   previousProject?: { title: string; slug: string } | null
   nextProject?: { title: string; slug: string } | null
+  currentSlug?: string
 }
 
 interface BodyImage {
@@ -452,6 +453,7 @@ export default function ExperimentalProjectDetail({
   project,
   previousProject,
   nextProject,
+  currentSlug,
 }: ExperimentalProjectDetailProps) {
   const [bodyImages, setBodyImages] = useState<BodyImage[]>([])
   const [overlayOpen, setOverlayOpen] = useState(false)
@@ -794,7 +796,7 @@ export default function ExperimentalProjectDetail({
           <div className="mx-auto flex max-w-5xl justify-between gap-8 px-4 sm:px-6">
             {previousProject ? (
               <Link
-                href={`/projects-experimental/${previousProject.slug}`}
+                href={`/projects/${previousProject.slug}`}
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
               >
                 <svg
@@ -812,11 +814,28 @@ export default function ExperimentalProjectDetail({
                 Previous project
               </Link>
             ) : (
-              <div />
+              <Link
+                href="/projects"
+                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Back to projects
+              </Link>
             )}
             {nextProject ? (
               <Link
-                href={`/projects-experimental/${nextProject.slug}`}
+                href={`/projects/${nextProject.slug}`}
                 className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
               >
                 Next project
@@ -834,7 +853,24 @@ export default function ExperimentalProjectDetail({
                 </svg>
               </Link>
             ) : (
-              <div />
+              <Link
+                href="/projects"
+                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
+              >
+                Back to projects
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </Link>
             )}
           </div>
         </div>
