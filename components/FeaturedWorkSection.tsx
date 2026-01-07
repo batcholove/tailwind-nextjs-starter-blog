@@ -18,7 +18,7 @@ const featuredProjects: FeaturedProject[] = [
     href: '/projects/growing-ux-maturity',
   },
   {
-    title: 'System Design',
+    title: 'System & Service Design',
     description: 'Connecting experiences end to end',
     imgSrc: '/static/images/system-design-cover.png',
     href: '/projects/system-design',
