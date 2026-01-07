@@ -542,7 +542,7 @@ export default function ExperimentalProjectDetail({
       {/* Back to Projects Button */}
       <div className="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
         <Link
-          href="/projects-experimental"
+          href="/projects"
           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center gap-2 transition-colors"
         >
           <svg
