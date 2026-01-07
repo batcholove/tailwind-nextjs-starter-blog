@@ -128,30 +128,35 @@ const projectStructuredData: Record<string, StructuredProject> = {
       'Good design improves business outcomes. Digital tools can improve physical product sales. Better customer experience leads to reduced returns. Operational efficiency directly impacts profitability.',
   },
   'esri-maps-layer-preferences': {
-    title: 'Esri Maps & Layer Preferences',
-    subtitle: 'Solving complex mapping challenges through thoughtful design.',
+    title: 'Esri Maps & Layers',
+    subtitle: 'Simplifying complex tools through clear language and familiar patterns.',
     description:
-      'A compelling design challenge and innovative solution. This project showcases strategic thinking, user research, and thoughtful design execution that resulted in meaningful user engagement and business impact.',
+      'Mapping tools were powerful but difficult to use. Legacy patterns, dense terminology, and limited flexibility created friction for both new and experienced users. This work focused on redesigning a critical part of the mapping experience so it aligned with how users think, speak, and work.',
     imgSrc: '/static/images/layer-preferences-cover.png',
-    role: ['UX Designer', 'Interaction Designer', 'User Researcher'],
+    role: [
+      'Senior Product Designer',
+      'UX and UI designer',
+      'UX writing contributor',
+      'User Researcher',
+    ],
     focus: [
-      'Complex Interactions',
-      'Mapping Applications',
-      'User Engagement',
-      'Data Visualization',
+      'Complex Mapping Applications',
+      'Applied design systems',
+      'Interaction design',
+      'UX writing and language',
     ],
     outcome:
-      'User engagement with layer management increased significantly. Power users found the new tools indispensable. Support tickets related to layer confusion decreased. Feature adoption exceeded expectations.',
+      'The experience became easier to understand, faster to use, and easier to teach. Language was simplified. Interactions aligned with familiar patterns. New capabilities were introduced without increasing cognitive load.',
     overview:
-      'Esri Maps is a powerful tool for geospatial analysis. This project focused on improving how users manage and interact with map layers.',
+      'Mapping tools were powerful but difficult to use. Legacy patterns, dense terminology, and limited flexibility created friction for both new and experienced users. This work focused on redesigning a critical part of the mapping experience so it aligned with how users think, speak, and work.',
     challenge:
-      'Users found layer management confusing and time-consuming. Complex workflows required many steps. Power users had workarounds for limitations. New users gave up easily.',
+      'Users struggled with layer management in traditional map interfaces. The existing solution was feature-rich but confusing, leading to user frustration and reduced adoption of key capabilities.',
     approach:
-      'We conducted extensive user research to understand workflows. We prototyped multiple interaction models. We tested with real users and iterated based on feedback.',
+      'We conducted extensive user research to understand how users conceptualized layers and data relationships. This informed our design direction and helped us create a more intuitive interface.',
     whatChanged:
-      'Layer management became intuitive and powerful. Users could accomplish complex tasks in fewer steps. Power users got the tools they needed. Adoption increased significantly.',
+      'The redesigned interface made layer management intuitive and powerful. Users could accomplish complex tasks more easily. Adoption of advanced features increased significantly.',
     whyMatters:
-      'Good design makes complex tools accessible. Thoughtful interaction design enables powerful workflows. User research prevents designing for assumptions.',
+      'Simplifying complex tools makes them accessible to more users. Clear language and familiar patterns reduce cognitive load. Strategic thinking about system design prevents fragmented solutions.',
   },
   'interior-design-installations': {
     title: 'Interior Design & Installations',
