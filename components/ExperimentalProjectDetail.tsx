@@ -260,13 +260,13 @@ function parseApproachSection(text: string) {
               </div>
             )}
             {hasImage && singleImages[imageType as keyof typeof singleImages] && (
-              <div className="my-8 w-full">
+              <div className="hover:border-primary-500 dark:hover:border-primary-400 my-8 w-full overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600">
                 <Image
                   src={singleImages[imageType as keyof typeof singleImages].src}
                   alt={singleImages[imageType as keyof typeof singleImages].alt}
                   width={1000}
                   height={600}
-                  className="h-auto w-full rounded-lg"
+                  className="h-auto w-full"
                 />
               </div>
             )}
