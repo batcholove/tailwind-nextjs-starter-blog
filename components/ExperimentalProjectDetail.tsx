@@ -158,6 +158,118 @@ function parseBoldAndLinks(text: string) {
 
 // Helper function to parse text with bullets and line breaks
 function parseTextWithBullets(text: string) {
+  // Define single images
+  const singleImages = {
+    'layer-overview': {
+      src: '/static/images/layer-overview.png',
+      alt: 'Layer Overview',
+    },
+    'layer-original-ui': {
+      src: '/static/images/layer-original-ui.png',
+      alt: 'Layer Original UI',
+    },
+    'ux-maturity-assessment': {
+      src: '/static/images/ux-maturity-assessment.png',
+      alt: 'UX Maturity Assessment',
+    },
+    'system-design-mapping': {
+      src: '/static/images/system-design-mapping.png',
+      alt: 'System Design Mapping',
+    },
+  }
+
+  // Check for image marker
+  const imageMatch = text.match(/\[IMAGE:([^\]]+)\]/)
+  if (imageMatch) {
+    const imageType = imageMatch[1]
+    const parts = text.split(/\[IMAGE:[^\]]+\]/)
+    const textBefore = parts[0].trim()
+    const textAfter = parts[1]?.trim() || ''
+    const imageData = singleImages[imageType as keyof typeof singleImages]
+
+    const elements: React.ReactNode[] = []
+
+    // Text before image
+    if (textBefore) {
+      textBefore
+        .split('\n')
+        .filter((part) => part.trim())
+        .forEach((part, idx) => {
+          if (part.trim().startsWith('•')) {
+            const bulletText = part.trim().substring(1).trim()
+            elements.push(
+              <li
+                key={`before-${idx}`}
+                className="ml-4 list-inside list-disc text-lg text-gray-700 dark:text-gray-300"
+              >
+                {parseBoldText(bulletText)}
+              </li>
+            )
+          } else {
+            elements.push(
+              <p
+                key={`before-${idx}`}
+                className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
+              >
+                {parseBoldText(part.trim())}
+              </p>
+            )
+          }
+        })
+    }
+
+    // Image
+    if (imageData) {
+      elements.push(
+        <div
+          key={`image-${imageType}`}
+          className="hover:border-primary-500 dark:hover:border-primary-400 my-8 w-full cursor-pointer overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600"
+          data-clickable-image
+        >
+          <Image
+            src={imageData.src}
+            alt={imageData.alt}
+            width={1000}
+            height={600}
+            className="h-auto w-full"
+          />
+        </div>
+      )
+    }
+
+    // Text after image
+    if (textAfter) {
+      textAfter
+        .split('\n')
+        .filter((part) => part.trim())
+        .forEach((part, idx) => {
+          if (part.trim().startsWith('•')) {
+            const bulletText = part.trim().substring(1).trim()
+            elements.push(
+              <li
+                key={`after-${idx}`}
+                className="ml-4 list-inside list-disc text-lg text-gray-700 dark:text-gray-300"
+              >
+                {parseBoldText(bulletText)}
+              </li>
+            )
+          } else {
+            elements.push(
+              <p
+                key={`after-${idx}`}
+                className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
+              >
+                {parseBoldText(part.trim())}
+              </p>
+            )
+          }
+        })
+    }
+
+    return elements
+  }
+
+  // No image, just parse bullets normally
   const parts = text.split('\n').filter((part) => part.trim())
 
   return parts.map((part, idx) => {
@@ -200,6 +312,26 @@ function parseApproachSection(text: string) {
       { src: '/static/images/system-design-carousel-2.png', alt: 'System Design Carousel 2' },
       { src: '/static/images/system-design-carousel-3.png', alt: 'System Design Carousel 3' },
     ],
+    'layer-language-mapping': [
+      { src: '/static/images/layer-language-mapping.png', alt: 'Layer language mapping' },
+      { src: '/static/images/layer-language-mapping-1.png', alt: 'Layer language mapping 1' },
+      { src: '/static/images/layer-language-mapping-2.png', alt: 'Layer language mapping 2' },
+    ],
+    'layer-ui-updates': [
+      { src: '/static/images/layer-ui-update.png', alt: 'Layer UI update' },
+      { src: '/static/images/layer-actions-update.png', alt: 'Layer actions update' },
+      { src: '/static/images/layer-sort-update.png', alt: 'Layer sort update' },
+      { src: '/static/images/layer-basemap-update.png', alt: 'Layer basemap update' },
+      { src: '/static/images/layer-search-update.png', alt: 'Layer search update' },
+    ],
+    'layer-drawer-animate': [
+      { src: '/static/images/layer-drawer-annimate-1.png', alt: 'Layer drawer animation 1' },
+      { src: '/static/images/layer-drawer-annimate-2.png', alt: 'Layer drawer animation 2' },
+      { src: '/static/images/layer-drawer-annimate-3.png', alt: 'Layer drawer animation 3' },
+      { src: '/static/images/layer-drawer-annimate-4.png', alt: 'Layer drawer animation 4' },
+      { src: '/static/images/layer-drawer-annimate-5.png', alt: 'Layer drawer animation 5' },
+      { src: '/static/images/layer-drawer-annimate-6.png', alt: 'Layer drawer animation 6' },
+    ],
   }
 
   // Define single images
@@ -216,6 +348,14 @@ function parseApproachSection(text: string) {
       src: '/static/images/system-design-mapping.png',
       alt: 'System Design Mapping',
     },
+    'layer-side-drawer-update': {
+      src: '/static/images/layer-side-drawer-update.png',
+      alt: 'Layer side drawer update',
+    },
+    'layer-search-update': {
+      src: '/static/images/layer-search-update.png',
+      alt: 'Layer search update',
+    },
   }
 
   return sections.map((section, idx) => {
@@ -224,105 +364,7 @@ function parseApproachSection(text: string) {
       .split('\n')
       .filter((l) => l.trim())
 
-    // For the first section (idx === 0), it's the introduction paragraph
-    if (idx === 0) {
-      const contentText = lines.join('\n')
-
-      // Check for carousel markers
-      const carouselMatch = contentText.match(/\[CAROUSEL:([^\]]+)\]/)
-      const hasCarousel = !!carouselMatch
-      const carouselType = carouselMatch?.[1]
-
-      // Check for image markers
-      const imageMatch = contentText.match(/\[IMAGE:([^\]]+)\]/)
-      const hasImage = !!imageMatch
-      const imageType = imageMatch?.[1]
-
-      if (hasCarousel || hasImage) {
-        const parts = contentText.split(/\[(?:CAROUSEL|IMAGE):[^\]]+\]/)
-        const textBefore = parts[0].trim()
-        const textAfter = parts[1]?.trim() || ''
-
-        return (
-          <div key={idx}>
-            {textBefore && (
-              <div className="mb-8 space-y-2">
-                {textBefore
-                  .split('\n')
-                  .filter((l) => l.trim())
-                  .map((line, lineIdx) => (
-                    <p
-                      key={`intro-${lineIdx}`}
-                      className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
-                    >
-                      {parseBoldText(line.trim())}
-                    </p>
-                  ))}
-              </div>
-            )}
-            {hasCarousel && carouselImages[carouselType as keyof typeof carouselImages] && (
-              <div className="my-8">
-                <ImageCarousel
-                  images={carouselImages[carouselType as keyof typeof carouselImages]}
-                />
-              </div>
-            )}
-            {hasImage && singleImages[imageType as keyof typeof singleImages] && (
-              <div
-                className="hover:border-primary-500 dark:hover:border-primary-400 my-8 w-full cursor-pointer overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600"
-                data-clickable-image
-              >
-                <Image
-                  src={singleImages[imageType as keyof typeof singleImages].src}
-                  alt={singleImages[imageType as keyof typeof singleImages].alt}
-                  width={1000}
-                  height={600}
-                  className="h-auto w-full"
-                />
-              </div>
-            )}
-            {textAfter && (
-              <div className="space-y-2">
-                {textAfter
-                  .split('\n')
-                  .filter((l) => l.trim())
-                  .map((line, lineIdx) => (
-                    <p
-                      key={`intro-after-${lineIdx}`}
-                      className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
-                    >
-                      {parseBoldText(line.trim())}
-                    </p>
-                  ))}
-              </div>
-            )}
-          </div>
-        )
-      }
-
-      return (
-        <div key={idx}>
-          <div className="space-y-2">
-            {lines.map((line, lineIdx) => {
-              const trimmedLine = line.trim()
-              if (trimmedLine) {
-                return (
-                  <p
-                    key={`intro-${lineIdx}`}
-                    className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
-                  >
-                    {parseBoldText(trimmedLine)}
-                  </p>
-                )
-              }
-              return null
-            })}
-          </div>
-        </div>
-      )
-    }
-
-    // For subsequent sections, treat as subsection with header
+    // All sections are treated as subsections with headers
     const title = lines[0].trim()
     const contentText = lines.slice(1).join('\n')
 
@@ -403,7 +445,12 @@ function parseApproachSection(text: string) {
             ) : null
           })}
         </div>
-        {carouselContent && <ImageCarousel images={carouselContent} />}
+        {carouselContent && (
+          <ImageCarousel
+            images={carouselContent}
+            isAnimated={carouselType === 'layer-drawer-animate'}
+          />
+        )}
         {imageContent && (
           <div
             className="hover:border-primary-500 dark:hover:border-primary-400 mt-8 w-full cursor-pointer overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600"
