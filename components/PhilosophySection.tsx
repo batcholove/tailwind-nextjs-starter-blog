@@ -13,29 +13,29 @@ export default function PhilosophySection() {
   return (
     <section
       id="philosophy-section"
-      className="w-full bg-gray-100 bg-cover bg-top bg-no-repeat px-4 py-12 sm:px-6 md:py-24 lg:py-32 xl:px-0 dark:bg-gray-900"
+      className="flex w-full items-center justify-center bg-gray-100 bg-cover bg-top bg-no-repeat px-4 py-12 sm:px-6 xl:px-0 dark:bg-gray-800"
       style={{
-        backgroundImage: 'url(/static/images/philosophy-image-bkgd-light.png)',
+        backgroundImage: 'url(/static/images/grid-image-bkgd-light.png)',
         minHeight: '100vh',
       }}
     >
       <style>{`
         .dark #philosophy-section {
-          background-image: url(/static/images/philosophy-image-bkgd-dark.png) !important;
+          background-image: url(/static/images/grid-image-bkgd-dark.png) !important;
         }
       `}</style>
       <div className="mx-auto max-w-3xl xl:max-w-5xl">
         <div className="space-y-8">
           {/* Headline */}
-          <h2 className="text-left text-4xl leading-[1.15] font-extrabold tracking-tight text-black sm:text-5xl md:text-6xl dark:text-white">
-            Good design scales across disciplines.
+          <h2 className="text-center text-4xl leading-[1.15] font-extrabold tracking-tight text-black sm:text-5xl md:text-6xl dark:text-white">
+            Design is a mindset.
           </h2>
 
           {/* Body Points */}
           <div className="space-y-4">
-            <p className="text-lg leading-8 text-gray-700 dark:text-gray-300">
-              Design principles don't change. Only the medium does. I focus on outcomes, not
-              artifacts.
+            <p className="text-center text-lg leading-8 text-gray-700 dark:text-gray-300">
+              I beleive core design principles provide the foundation to produce outcomes that scale
+              acorss disiplines and mediums.
             </p>
           </div>
 
@@ -65,9 +65,9 @@ export default function PhilosophySection() {
           */}
 
           {/* Beyond UX/UI Image */}
-          <div className="flex justify-start overflow-hidden pt-8">
+          <div className="flex justify-center overflow-hidden pt-8">
             <img
-              src="/static/images/beyond-ux-ui.png"
+              src="/static/images/philosophy-image.png"
               alt="Design disciplines visualization"
               className="h-80 w-80 object-cover"
             />

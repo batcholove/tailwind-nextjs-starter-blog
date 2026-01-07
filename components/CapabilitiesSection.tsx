@@ -1,7 +1,6 @@
 'use client'
 
 import Link from './Link'
-import CapabilitiesCarousel from './CapabilitiesCarousel'
 
 interface Capability {
   title: string
@@ -16,15 +15,17 @@ const capabilities: Capability[] = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
         fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
         stroke="currentColor"
-        strokeWidth="2"
         className="h-8 w-8"
       >
-        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-        <line x1="9" y1="9" x2="15" y2="9"></line>
-        <line x1="9" y1="15" x2="15" y2="15"></line>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+        />
       </svg>
     ),
   },
@@ -34,16 +35,17 @@ const capabilities: Capability[] = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
         fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
         stroke="currentColor"
-        strokeWidth="2"
         className="h-8 w-8"
       >
-        <rect x="3" y="3" width="7" height="7"></rect>
-        <rect x="14" y="3" width="7" height="7"></rect>
-        <rect x="14" y="14" width="7" height="7"></rect>
-        <rect x="3" y="14" width="7" height="7"></rect>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"
+        />
       </svg>
     ),
   },
@@ -53,17 +55,17 @@ const capabilities: Capability[] = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
         fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
         stroke="currentColor"
-        strokeWidth="2"
         className="h-8 w-8"
       >
-        <circle cx="6" cy="6" r="2"></circle>
-        <circle cx="18" cy="6" r="2"></circle>
-        <circle cx="12" cy="18" r="2"></circle>
-        <line x1="6" y1="8" x2="12" y2="16"></line>
-        <line x1="18" y1="8" x2="12" y2="16"></line>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
+        />
       </svg>
     ),
   },
@@ -73,15 +75,17 @@ const capabilities: Capability[] = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
         fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
         stroke="currentColor"
-        strokeWidth="2"
         className="h-8 w-8"
       >
-        <circle cx="12" cy="12" r="10"></circle>
-        <circle cx="12" cy="12" r="6"></circle>
-        <circle cx="12" cy="12" r="2"></circle>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+        />
       </svg>
     ),
   },
@@ -91,16 +95,17 @@ const capabilities: Capability[] = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
         fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
         stroke="currentColor"
-        strokeWidth="2"
         className="h-8 w-8"
       >
-        <circle cx="6" cy="6" r="3"></circle>
-        <circle cx="18" cy="6" r="3"></circle>
-        <circle cx="12" cy="18" r="3"></circle>
-        <path d="M9 9 L15 9 M6 9 L12 15 M18 9 L12 15"></path>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z"
+        />
       </svg>
     ),
   },
@@ -110,14 +115,17 @@ const capabilities: Capability[] = [
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
         fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
         stroke="currentColor"
-        strokeWidth="2"
         className="h-8 w-8"
       >
-        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-        <circle cx="12" cy="7" r="4"></circle>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+        />
       </svg>
     ),
   },
@@ -134,31 +142,44 @@ export default function CapabilitiesSection() {
   return (
     <section
       id="capabilities-section"
-      className="w-full bg-white bg-cover bg-top bg-no-repeat px-4 py-12 sm:px-6 md:py-24 lg:py-32 xl:px-0 dark:bg-gray-950"
+      className="flex w-full items-center justify-center bg-cover bg-top bg-no-repeat px-4 py-12 sm:px-6 xl:px-0 dark:bg-gray-950"
       style={{
-        backgroundImage: 'url(/static/images/philosophy-image-bkgd-light.png)',
+        backgroundImage: 'url(/static/images/grid-image-bkgd-light.png)',
         minHeight: '100vh',
       }}
     >
       <style>{`
         .dark #capabilities-section {
-          background-image: url(/static/images/philosophy-image-bkgd-dark.png) !important;
+          background-image: url(/static/images/grid-image-bkgd-dark.png) !important;
         }
       `}</style>
       <div className="mx-auto max-w-3xl xl:max-w-5xl">
         <div className="space-y-8">
           {/* Headline */}
-          <h2 className="text-4xl leading-[1.15] font-extrabold tracking-tight text-black sm:text-5xl md:text-6xl dark:text-white">
+          <h2 className="text-center text-4xl leading-[1.15] font-extrabold tracking-tight text-black sm:text-5xl md:text-6xl dark:text-white">
             How I add value.
           </h2>
 
           {/* Intro */}
-          <p className="text-lg leading-8 text-gray-700 dark:text-gray-300">
-            A multidisciplinary skill set grounded in consistent design thinking.
+          <p className="text-center text-lg leading-8 text-gray-700 dark:text-gray-300">
+            I bring a multidisciplinary skillset grounded in consistent design thinking.
           </p>
 
-          {/* Capabilities Carousel */}
-          <CapabilitiesCarousel capabilities={capabilities} />
+          {/* Capabilities Grid */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {capabilities.map((capability) => (
+              <div
+                key={capability.title}
+                className="rounded-lg border-2 border-gray-300 bg-white p-6 dark:border-gray-600 dark:bg-gray-800"
+              >
+                <div className="text-primary-500 dark:text-primary-400 mb-4">{capability.icon}</div>
+                <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+                  {capability.title}
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">{capability.description}</p>
+              </div>
+            ))}
+          </div>
 
           {/* CTA */}
           {/* Hidden button: See how these skills show up in real work

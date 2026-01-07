@@ -31,7 +31,7 @@ const FeaturedCard = ({ title, description, imgSrc, href }) => (
           </h2>
           <p className="prose max-w-none text-gray-500 dark:text-gray-400">{description}</p>
         </div>
-        <div className="mt-4 flex justify-end">
+        <div className="mt-4 flex justify-start">
           <div className="group-hover:border-primary-500 group-hover:bg-primary-50 dark:group-hover:border-primary-400 inline-flex items-center justify-center rounded-full border-2 border-gray-300 bg-gray-50 p-2 transition-all dark:border-gray-600 dark:bg-gray-700 dark:group-hover:bg-gray-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"

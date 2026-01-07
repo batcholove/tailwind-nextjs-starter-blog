@@ -9,9 +9,7 @@ interface Project {
 const projectsData: Project[] = [
   {
     title: 'Growing UX Maturity',
-    description: `Discover how to cultivate UX maturity across your organization. This case study 
-    explores building a design-centric culture, establishing design systems, and 
-    empowering teams to make user-centered decisions at every level.`,
+    description: `Cultivating UX maturity across an organization. This case study explores building a design-centric culture, establishing design systems, and empowering teams to make user-centered decisions at every level.`,
     imgSrc: '/static/images/ux-maturity-cover.png',
     href: '/projects/growing-ux-maturity',
     slug: 'growing-ux-maturity',

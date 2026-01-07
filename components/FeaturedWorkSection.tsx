@@ -42,26 +42,26 @@ export default function FeaturedWorkSection() {
   return (
     <section
       id="featured-work-section"
-      className="w-full bg-gray-100 bg-cover bg-top bg-no-repeat px-4 py-12 sm:px-6 md:py-24 lg:py-32 xl:px-0 dark:bg-gray-900"
+      className="flex w-full items-center justify-center bg-gray-100 bg-cover bg-top bg-no-repeat px-4 py-12 sm:px-6 xl:px-0 dark:bg-gray-800"
       style={{
-        backgroundImage: 'url(/static/images/philosophy-image-bkgd-light.png)',
+        backgroundImage: 'url(/static/images/grid-image-bkgd-light.png)',
         minHeight: '100vh',
       }}
     >
       <style>{`
         .dark #featured-work-section {
-          background-image: url(/static/images/philosophy-image-bkgd-dark.png) !important;
+          background-image: url(/static/images/grid-image-bkgd-dark.png) !important;
         }
       `}</style>
       <div className="mx-auto max-w-3xl xl:max-w-5xl">
         <div className="space-y-8">
           {/* Headline */}
-          <h2 className="text-left text-4xl leading-[1.15] font-extrabold tracking-tight text-black sm:text-5xl md:text-6xl dark:text-white">
+          <h2 className="text-center text-4xl leading-[1.15] font-extrabold tracking-tight text-black sm:text-5xl md:text-6xl dark:text-white">
             Selected work. Real outcomes.
           </h2>
 
           {/* Intro */}
-          <p className="text-lg leading-8 text-gray-700 dark:text-gray-300">
+          <p className="text-center text-lg leading-8 text-gray-700 dark:text-gray-300">
             A snapshot of how strategy and design come together to create impact.
           </p>
 
