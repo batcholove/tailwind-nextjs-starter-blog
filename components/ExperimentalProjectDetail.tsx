@@ -1,8 +1,10 @@
 'use client'
 
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from '@/components/Image'
 import ImageCarousel from '@/components/ImageCarousel'
+import ImageOverlay from '@/components/ImageOverlay'
 
 interface ExperimentalProjectDetailProps {
   project: {
@@ -21,6 +23,11 @@ interface ExperimentalProjectDetailProps {
   }
   previousProject?: { title: string; slug: string } | null
   nextProject?: { title: string; slug: string } | null
+}
+
+interface BodyImage {
+  src: string
+  alt: string
 }
 
 // Helper function to parse bold markdown syntax and HTML anchors
@@ -260,7 +267,10 @@ function parseApproachSection(text: string) {
               </div>
             )}
             {hasImage && singleImages[imageType as keyof typeof singleImages] && (
-              <div className="hover:border-primary-500 dark:hover:border-primary-400 my-8 w-full overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600">
+              <div
+                className="hover:border-primary-500 dark:hover:border-primary-400 my-8 w-full cursor-pointer overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600"
+                data-clickable-image
+              >
                 <Image
                   src={singleImages[imageType as keyof typeof singleImages].src}
                   alt={singleImages[imageType as keyof typeof singleImages].alt}
@@ -394,7 +404,10 @@ function parseApproachSection(text: string) {
         </div>
         {carouselContent && <ImageCarousel images={carouselContent} />}
         {imageContent && (
-          <div className="hover:border-primary-500 dark:hover:border-primary-400 mt-8 w-full overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600">
+          <div
+            className="hover:border-primary-500 dark:hover:border-primary-400 mt-8 w-full cursor-pointer overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600"
+            data-clickable-image
+          >
             <Image
               src={imageContent.src}
               alt={imageContent.alt}
@@ -440,8 +453,92 @@ export default function ExperimentalProjectDetail({
   previousProject,
   nextProject,
 }: ExperimentalProjectDetailProps) {
+  const [bodyImages, setBodyImages] = useState<BodyImage[]>([])
+  const [overlayOpen, setOverlayOpen] = useState(false)
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0)
+  const contentRef = useRef<HTMLDivElement>(null)
+
+  const handleImageClick = (imageSrc: string) => {
+    const index = bodyImages.findIndex((img) => img.src === imageSrc)
+    if (index !== -1) {
+      setSelectedImageIndex(index)
+      setOverlayOpen(true)
+    }
+  }
+
+  const addBodyImage = (src: string, alt: string) => {
+    setBodyImages((prev) => {
+      if (prev.some((img) => img.src === src)) {
+        return prev
+      }
+      return [...prev, { src, alt }]
+    })
+  }
+
+  // Event delegation: collect all images in body sections
+  useEffect(() => {
+    const currentRef = contentRef.current
+    if (!currentRef) return
+
+    const handleClick = (e: Event) => {
+      const target = e.target as HTMLElement
+
+      // Check if the click is on an image or within a clickable image container
+      let img: HTMLImageElement | null = null
+
+      // If clicking on image directly
+      if (target.tagName === 'IMG') {
+        img = target as HTMLImageElement
+      }
+      // If clicking on the container div around the image
+      else if (target.hasAttribute('data-clickable-image')) {
+        img = target.querySelector('img')
+      }
+      // Walk up the tree to find a clickable image container
+      else {
+        const clickableParent = target.closest('[data-clickable-image]')
+        if (clickableParent) {
+          img = (clickableParent as HTMLElement).querySelector('img')
+        }
+      }
+
+      if (img && img.src) {
+        const src = img.src
+        const alt = img.alt || ''
+
+        // Add image if not already present
+        setBodyImages((prev) => {
+          const exists = prev.some((i) => i.src === src)
+          if (!exists) {
+            return [...prev, { src, alt }]
+          }
+          return prev
+        })
+
+        // Set selected image and open overlay
+        setBodyImages((prev) => {
+          const index = prev.findIndex((i) => i.src === src)
+          if (index !== -1) {
+            setSelectedImageIndex(index)
+            setOverlayOpen(true)
+          }
+          return prev
+        })
+      }
+    }
+
+    currentRef.addEventListener('click', handleClick)
+    return () => currentRef.removeEventListener('click', handleClick)
+  }, [])
   return (
     <div className="w-full">
+      <ImageOverlay
+        images={bodyImages}
+        initialIndex={selectedImageIndex}
+        isOpen={overlayOpen}
+        onClose={() => setOverlayOpen(false)}
+      />
+
       {/* Back to Projects Button */}
       <div className="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
         <Link
@@ -541,7 +638,7 @@ export default function ExperimentalProjectDetail({
       </div>
 
       {/* Content Sections */}
-      <div className="w-full space-y-0">
+      <div className="w-full space-y-0" ref={contentRef}>
         {/* Project Overview */}
         {project.overview && (
           <section className="w-full bg-white py-16 md:py-24 dark:bg-gray-950">
@@ -651,7 +748,10 @@ export default function ExperimentalProjectDetail({
                       <>
                         {parseTextWithBullets(textContent)}
                         {singleImages[imageType as keyof typeof singleImages] && (
-                          <div className="hover:border-primary-500 dark:hover:border-primary-400 mt-8 w-full overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600">
+                          <div
+                            className="hover:border-primary-500 dark:hover:border-primary-400 mt-8 w-full cursor-pointer overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600"
+                            data-clickable-image
+                          >
                             <Image
                               src={singleImages[imageType as keyof typeof singleImages].src}
                               alt={singleImages[imageType as keyof typeof singleImages].alt}
