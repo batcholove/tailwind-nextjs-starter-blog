@@ -8,7 +8,7 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'Growing UX maturity',
+    title: 'Growing UX Maturity',
     description: `Discover how to cultivate UX maturity across your organization. This case study 
     explores building a design-centric culture, establishing design systems, and 
     empowering teams to make user-centered decisions at every level.`,
@@ -17,7 +17,7 @@ const projectsData: Project[] = [
     slug: 'growing-ux-maturity',
   },
   {
-    title: 'System Design',
+    title: 'System & Service Design',
     description: `Redesigning a suite of government applications through a holistic approach to system design. This project 
     leverages a comprehensive design system and UI component library while thinking strategically about the entire 
     system architecture, user workflows, and organizational impact across multiple applications.`,
@@ -26,7 +26,7 @@ const projectsData: Project[] = [
     slug: 'system-design',
   },
   {
-    title: 'Putting people first',
+    title: 'Putting People First',
     description: `Learn how personas and archetypes align organizations around human-centered design. 
     This project demonstrates how to build shared mental models that guide product 
     decisions and foster empathy across teams.`,
@@ -35,7 +35,7 @@ const projectsData: Project[] = [
     slug: 'putting-people-first',
   },
   {
-    title: 'Design systems',
+    title: 'Design Systems',
     description: `Explore the importance of design systems and UI component libraries in bridging the gap between 
     design and development. A well-crafted design system ensures consistency, accelerates development, reduces 
     miscommunication, and creates a shared language that empowers both designers and developers to build better products.`,
@@ -44,7 +44,7 @@ const projectsData: Project[] = [
     slug: 'design-systems',
   },
   {
-    title: 'Esri maps & layer preferences',
+    title: 'Esri Maps & Layers',
     description: `A compelling design challenge and innovative solution. This project showcases 
     strategic thinking, user research, and thoughtful design execution that resulted 
     in meaningful user engagement and business impact.`,
@@ -62,7 +62,7 @@ const projectsData: Project[] = [
     slug: 'interface-flor',
   },
   {
-    title: 'Interior design & installations',
+    title: 'Interior Design & Installations',
     description: `Good design is good design—it transcends discipline. This project demonstrates how strong design 
     principles apply across any facet of design. A skilled designer can transfer foundational knowledge from one 
     discipline to another, creating cohesive, thoughtful experiences whether designing spaces or interfaces.`,
@@ -80,7 +80,7 @@ const projectsData: Project[] = [
   //   slug: 'abba-haircare-brand-update',
   // },
   {
-    title: 'Logo design & marketing',
+    title: 'Logo Design & Marketing',
     description: `Discover the importance of a strong logo design in connecting with customers and communicating 
     the brand's values. This project explores how thoughtful logo design creates lasting impressions, builds brand 
     recognition, and becomes the visual cornerstone of a company's identity.`,
