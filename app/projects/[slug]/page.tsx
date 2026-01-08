@@ -42,8 +42,8 @@ const projectStructuredData: Record<string, StructuredProject> = {
     whyMatters:
       'Good design starts with shared understanding: alignment on values, goals, and language. It requires intentional systems: processes and practices that scale. And it demands investment in people: growing capability and confidence. By focusing on maturity we created the conditions for better design to happen repeatedly and at scale. Growing UX maturity requires intentional investment in culture, process, and capability. Organizations that successfully mature their UX capabilities see tangible benefits in product quality, team efficiency, and user satisfaction.',
   },
-  'system-design': {
-    title: 'System Design',
+  'system-service-design': {
+    title: 'System & Service Design',
     subtitle:
       'Redesigning a suite of government applications through holistic system architecture.',
     description:
@@ -58,9 +58,9 @@ const projectStructuredData: Record<string, StructuredProject> = {
     challenge:
       'Multiple applications had grown independently with inconsistent design patterns, terminology, and user workflows. Users struggled to transfer knowledge between applications. Developers duplicated work across codebases. There was no shared language or design standards across the suite.',
     approach:
-      'We mapped all user workflows across applications to identify opportunities for consolidation and consistency. We created a comprehensive design system with reusable components and patterns. We redesigned each application to use the new system while respecting unique user needs and workflows.\n\n[CAROUSEL:system-design]\n\n## Map the system\nWe visualized the full service ecosystem to reveal relationships, handoffs, and breakdowns.\n\n• End-to-end journey maps\n• Service blueprints\n• Stakeholder and system mapping\n\n**This made the invisible visible.**\n\n## Design for orchestration\nRather than redesigning individual moments, we focused on how experiences connected.\n\n• Clarifying ownership across touchpoints\n• Identifying critical handoffs and failure points\n• Aligning teams around shared outcomes\n\n**The work shifted from what my team owns to what the user experiences.**\n\n[IMAGE:system-design-mapping]\n\n## Enable better decisions\nArtifacts were designed to be used, not admired.\n\nThey supported:\n\n• Cross-team planning\n• Prioritization conversations\n• Strategic trade-offs\n\n**Design became a tool for alignment.**',
+      'We mapped all user workflows across applications to identify opportunities for consolidation and consistency. We created a comprehensive design system with reusable components and patterns. We redesigned each application to use the new system while respecting unique user needs and workflows.\n\n## Map the system\n\nWe visualized the full service ecosystem to reveal relationships, handoffs, and breakdowns.\n\n• End-to-end journey maps\n• Service blueprints\n• Stakeholder and system mapping\n\n**This made the invisible visible.**\n\n[CAROUSEL:system-service-design]\n\n## Design for orchestration\n\nRather than redesigning individual moments, we focused on how experiences connected.\n\n• Clarifying ownership across touchpoints\n• Identifying critical handoffs and failure points\n• Aligning teams around shared outcomes\n\n**The work shifted from what my team owns to what the user experiences.**\n\n[IMAGE:system-design-mapping]\n\n## Enable better decisions\n\nArtifacts were designed to be used, not admired.\n\nThey supported:\n\n• Cross-team planning\n• Prioritization conversations\n• Strategic trade-offs\n\n**Design became a tool for alignment.**',
     whatChanged:
-      'Users experienced reduced cognitive load when switching between applications. Training time decreased significantly. Development velocity increased through component reuse. Support tickets related to user confusion decreased. The <a href="/projects/design-systems" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 underline">design system</a> became a reference for future development.\n\n[CAROUSEL:system-design-outcomes]',
+      'Users experienced reduced cognitive load when switching between applications. Training time decreased significantly. Development velocity increased through component reuse. Support tickets related to user confusion decreased. The <a href="/projects/design-systems" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 underline">design system</a> became a reference for future development.\n\n[CAROUSEL:system-service-design-outcomes]',
     whyMatters:
       'Coherent system design improves user efficiency and satisfaction. Consistency across applications builds user confidence and reduces errors. A strong design system enables teams to move faster and maintain quality. Strategic thinking about the entire system prevents fragmented solutions.',
   },
@@ -89,22 +89,22 @@ const projectStructuredData: Record<string, StructuredProject> = {
     title: 'Design Systems',
     subtitle: 'Building the bridge between design and development.',
     description:
-      'Explore the importance of design systems and UI component libraries in bridging the gap between design and development. A well-crafted design system ensures consistency, accelerates development, reduces miscommunication, and creates a shared language that empowers both designers and developers to build better products.',
+      'Multiple teams and vendors at a government agengy were designing and building products independently. Inconsistencies in UI, interaction patterns, and language created friction for users and inefficiency for teams. This work focused on creating a shared system that supported quality, reuse, and scalability across products.',
     imgSrc: '/static/images/design-systems-cover.png',
     role: ['Design System Lead', 'Component Architect', 'Design & Dev Liaison'],
     focus: ['Design Systems', 'Component Libraries', 'Documentation', 'Design-Dev Collaboration'],
     outcome:
-      'Designers and developers speak the same language. Components are reused across products. Development speed increased by 40%. Design consistency improved significantly. Maintenance burden decreased.',
+      'Design and development became faster and more consistent. Teams reused patterns instead of reinventing them. Users experienced clearer, more predictable interactions across products. The system scaled across teams, vendors, and platforms.',
     overview:
-      'This project established a design system as the single source of truth for design and development. It served as both a design tool and a development framework.',
+      'As products evolved, design decisions were being made repeatedly and inconsistently. Small differences added up to a fragmented experience and increased delivery cost. A design system was introduced to create alignment without constraining teams.',
     challenge:
-      'Design and development operated independently. Components were duplicated across products. Design specifications were often unclear or incomplete. Inconsistencies appeared in products despite best intentions.',
+      '• Inconsistent UI and interaction patterns\n• Repeated design and development effort\n• Accessibility and compliance risks\n• Limited shared ownership of design standards\n\n**Without a system, scale increased friction rather than efficiency.**',
     approach:
-      'We defined a comprehensive set of design principles. We created modular components with clear usage guidelines. We documented everything with examples and code snippets. We trained teams on how to use the system.',
+      'We defined a comprehensive set of design principles. We created modular components with clear usage guidelines. We documented everything with examples and code snippets. We trained teams on how to use the system.\n\n## Establish a foundation\n\nWe identified common patterns, components, and language across products.\n\n• Core UI components\n• Reusable interaction patterns\n• Shared UX writing guidelines\n• Accessibility standards baked in\n\n**The focus was clarity, not completeness.**\n\n## Build for adoption\n\nThe system was designed to be practical and easy to use.\n\n• Figma libraries for designers\n• Code-based components documented in Storybook\n• Clear usage guidance and examples\n\n**Adoption mattered more than perfection.**\n\n## Scale intentionally\n\nThe system evolved alongside product needs.\n\n• MVP first, then expansion\n• Feedback loops with designers and developers\n• Governance focused on enablement, not control\n\n**The system grew as trust grew.**',
     whatChanged:
-      'Designers could build faster by combining components. Developers implemented designs more accurately. Handoff between design and development became smoother. Products maintained consistent branding and patterns.',
+      'Reduced design and development time\n\n• Improved consistency across products\n• Lower cognitive load for users\n• Fewer accessibility issues\n• Broad adoption across teams and vendors\n\n**The system became shared infrastructure.**',
     whyMatters:
-      'Design systems scale design and development work. They reduce the cost of inconsistency. They enable teams to focus on problems rather than repeating solutions. They create a shared vocabulary between disciplines.',
+      "Design systems aren't simply about UI kits. They're about reducing friction, supporting teams, and enabling quality at scale.\n\n**This work turned design principles into operational reality.**",
   },
   'interface-flor': {
     title: 'Interface FLOR',

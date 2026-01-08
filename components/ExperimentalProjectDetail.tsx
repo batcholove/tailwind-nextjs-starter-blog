@@ -312,6 +312,11 @@ function parseApproachSection(text: string) {
       { src: '/static/images/system-design-carousel-2.png', alt: 'System Design Carousel 2' },
       { src: '/static/images/system-design-carousel-3.png', alt: 'System Design Carousel 3' },
     ],
+    'system-service-design': [
+      { src: '/static/images/system-design-carousel-1.png', alt: 'System Design Carousel 1' },
+      { src: '/static/images/system-design-carousel-2.png', alt: 'System Design Carousel 2' },
+      { src: '/static/images/system-design-carousel-3.png', alt: 'System Design Carousel 3' },
+    ],
     'layer-language-mapping': [
       { src: '/static/images/layer-language-mapping.png', alt: 'Layer language mapping' },
       { src: '/static/images/layer-language-mapping-1.png', alt: 'Layer language mapping 1' },
@@ -419,7 +424,13 @@ function parseApproachSection(text: string) {
         key={idx}
         className={idx > 0 ? 'mt-8 border-t border-gray-200 pt-8 dark:border-gray-700' : ''}
       >
-        <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{title}</h3>
+        {idx === 0 ? (
+          <p className="mb-4 text-base leading-relaxed text-gray-700 dark:text-gray-300">
+            {parseBoldText(title)}
+          </p>
+        ) : (
+          <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{title}</h3>
+        )}
         <div className="space-y-2">
           {contentBefore.map((line, lineIdx) => {
             const trimmedLine = line.trim()
@@ -437,7 +448,7 @@ function parseApproachSection(text: string) {
             return trimmedLine ? (
               <p
                 key={`before-${lineIdx}`}
-                className="text-lg leading-relaxed text-gray-700 dark:text-gray-300"
+                className="text-base leading-relaxed text-gray-700 dark:text-gray-300"
               >
                 {parseBoldText(trimmedLine)}
               </p>
@@ -759,6 +770,24 @@ export default function ExperimentalProjectDetail({
                           alt: 'System Design Cover',
                         },
                       ],
+                      'system-service-design-outcomes': [
+                        {
+                          src: '/static/images/system-design-carousel-4.png',
+                          alt: 'System Design Carousel 4',
+                        },
+                        {
+                          src: '/static/images/system-design-carousel-5.png',
+                          alt: 'System Design Carousel 5',
+                        },
+                        {
+                          src: '/static/images/system-design-carousel-6.png',
+                          alt: 'System Design Carousel 6',
+                        },
+                        {
+                          src: '/static/images/system-design-cover.png',
+                          alt: 'System Design Cover',
+                        },
+                      ],
                       'layer-drawer-animate': [
                         {
                           src: '/static/images/layer-drawer-annimate-1.png',
@@ -857,7 +886,7 @@ export default function ExperimentalProjectDetail({
               </h2>
               <div className="prose dark:prose-invert max-w-none">
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                  {project.whyMatters}
+                  {parseBoldText(project.whyMatters)}
                 </p>
               </div>
             </div>

@@ -20,8 +20,8 @@ const projectsData: Project[] = [
     leverages a comprehensive design system and UI component library while thinking strategically about the entire 
     system architecture, user workflows, and organizational impact across multiple applications.`,
     imgSrc: '/static/images/system-design-cover.png',
-    href: '/projects/system-design',
-    slug: 'system-design',
+    href: '/projects/system-service-design',
+    slug: 'system-service-design',
   },
   {
     title: 'Putting People First',

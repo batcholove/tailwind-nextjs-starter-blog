@@ -21,7 +21,7 @@ const featuredProjects: FeaturedProject[] = [
     title: 'System & Service Design',
     description: 'Connecting experiences end to end',
     imgSrc: '/static/images/system-design-cover.png',
-    href: '/projects/system-design',
+    href: '/projects/system-service-design',
   },
   {
     title: 'Putting People First',
