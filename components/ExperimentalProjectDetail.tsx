@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from '@/components/Image'
 import ImageCarousel from '@/components/ImageCarousel'
-import ImageOverlay from '@/components/ImageOverlay'
 
 interface ExperimentalProjectDetailProps {
   project: {
@@ -27,11 +26,6 @@ interface ExperimentalProjectDetailProps {
 }
 
 interface BodyImage {
-  src: string
-  alt: string
-}
-
-interface OverlayImage {
   src: string
   alt: string
 }
@@ -537,19 +531,9 @@ export default function ExperimentalProjectDetail({
   nextProject,
   currentSlug,
 }: ExperimentalProjectDetailProps) {
-  const [overlayOpen, setOverlayOpen] = useState(false)
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0)
-  const [carouselImages, setCarouselImages] = useState<OverlayImage[]>([])
   const contentRef = useRef<HTMLDivElement>(null)
   return (
     <div className="w-full">
-      <ImageOverlay
-        images={carouselImages}
-        initialIndex={selectedImageIndex}
-        isOpen={overlayOpen}
-        onClose={() => setOverlayOpen(false)}
-      />
-
       {/* Back to Projects Button */}
       <div className="mx-auto max-w-5xl px-4 pt-8 pb-4 sm:px-6">
         <Link
