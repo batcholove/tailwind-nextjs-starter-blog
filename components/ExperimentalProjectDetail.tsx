@@ -307,6 +307,19 @@ function parseApproachSection(text: string) {
       { src: '/static/images/skills-mapping-content.png', alt: 'Skills mapping content' },
       { src: '/static/images/skills-mapping-leadership.png', alt: 'Skills mapping leadership' },
     ],
+    'personas-journey': [
+      { src: '/static/images/proto-personas.png', alt: 'Proto personas' },
+      { src: '/static/images/research-backed-personas.png', alt: 'Research backed personas' },
+      { src: '/static/images/research-backed-journey-map.png', alt: 'Research backed journey map' },
+    ],
+    'research-usable': [
+      { src: '/static/images/archetypes-cover.png', alt: 'Archetypes cover' },
+      { src: '/static/images/archetypes.png', alt: 'Archetypes' },
+      { src: '/static/images/roles.png', alt: 'Roles' },
+      { src: '/static/images/persona.png', alt: 'Persona' },
+      { src: '/static/images/journey-map.png', alt: 'Journey map' },
+      { src: '/static/images/ui-design-prototype.png', alt: 'UI design prototype' },
+    ],
     'system-design': [
       { src: '/static/images/system-design-carousel-1.png', alt: 'System Design Carousel 1' },
       { src: '/static/images/system-design-carousel-2.png', alt: 'System Design Carousel 2' },
@@ -359,6 +372,10 @@ function parseApproachSection(text: string) {
     'layer-search-update': {
       src: '/static/images/layer-search-update.png',
       alt: 'Layer search update',
+    },
+    'ecosystem-map': {
+      src: '/static/images/ecosystem-map.png',
+      alt: 'Ecosystem map',
     },
   }
 
@@ -460,6 +477,11 @@ function parseApproachSection(text: string) {
             images={carouselContent}
             isAnimated={
               carouselType === 'layer-drawer-animate' || carouselType === 'layer-ui-updates'
+            }
+            direction={
+              carouselType === 'personas-journey' || carouselType === 'research-usable'
+                ? 'vertical'
+                : 'horizontal'
             }
           />
         )}
@@ -831,6 +853,12 @@ export default function ExperimentalProjectDetail({
                                 ]
                               }
                               isAnimated={carouselType === 'layer-drawer-animate'}
+                              direction={
+                                carouselType === 'personas-journey' ||
+                                carouselType === 'research-usable'
+                                  ? 'vertical'
+                                  : 'horizontal'
+                              }
                             />
                           </div>
                         )}
@@ -846,6 +874,10 @@ export default function ExperimentalProjectDetail({
                       'ux-maturity-assessment': {
                         src: '/static/images/ux-maturity-assessment.png',
                         alt: 'UX Maturity Assessment',
+                      },
+                      'ecosystem-map': {
+                        src: '/static/images/ecosystem-map.png',
+                        alt: 'Ecosystem map',
                       },
                     }
                     const parts = project.whatChanged.split(/\[IMAGE:[^\]]+\]/)

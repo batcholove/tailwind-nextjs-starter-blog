@@ -7,12 +7,14 @@ interface ImageCarouselProps {
   images: { src: string; alt: string }[]
   onImageClick?: (imageSrc: string) => void
   isAnimated?: boolean
+  direction?: 'horizontal' | 'vertical'
 }
 
 export default function ImageCarousel({
   images,
   onImageClick,
   isAnimated = false,
+  direction = 'horizontal',
 }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [nextIndex, setNextIndex] = useState<number | null>(null)
@@ -93,6 +95,26 @@ export default function ImageCarousel({
             transform: translateX(-100%);
           }
         }
+        @keyframes slideInFromBottom {
+          from {
+            opacity: 1;
+            transform: translateY(100%);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes slideOutToTop {
+          from {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(-100%);
+          }
+        }
       `}</style>
       <div
         className="hover:border-primary-500 dark:hover:border-primary-400 relative cursor-pointer overflow-hidden rounded-lg border-2 border-gray-300 bg-white transition-all duration-200 hover:shadow-lg dark:border-gray-600 dark:bg-gray-950"
@@ -102,7 +124,10 @@ export default function ImageCarousel({
         <div
           className="absolute inset-0 flex min-h-[400px] w-full items-center justify-center bg-white dark:bg-gray-950"
           style={{
-            animation: nextIndex !== null ? 'slideOutToLeft 0.6s ease-out forwards' : 'none',
+            animation:
+              nextIndex !== null
+                ? `${direction === 'vertical' ? 'slideOutToTop' : 'slideOutToLeft'} 0.6s ease-out forwards`
+                : 'none',
             zIndex: nextIndex !== null ? 1 : 2,
           }}
         >
@@ -119,7 +144,10 @@ export default function ImageCarousel({
         <div
           className="relative flex min-h-[400px] w-full items-center justify-center bg-white dark:bg-gray-950"
           style={{
-            animation: nextIndex !== null ? 'slideInFromRight 0.6s ease-out' : 'none',
+            animation:
+              nextIndex !== null
+                ? `${direction === 'vertical' ? 'slideInFromBottom' : 'slideInFromRight'} 0.6s ease-out`
+                : 'none',
           }}
         >
           <Image
