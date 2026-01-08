@@ -657,7 +657,8 @@ export default function ExperimentalProjectDetail({
                           'brand-bgbg.png',
                           'brand-big-window.png',
                           'brand-bookclub.png',
-                          'brand-core.png',
+                          'brand-core-gis.png',
+                          'brand-core-ui.png',
                           'brand-fineline.png',
                           'brand-foco-snob.png',
                           'brand-little-horse.png',
@@ -671,6 +672,7 @@ export default function ExperimentalProjectDetail({
                           'brand-roseanthorn.png',
                           'brand-tierra-incognita.png',
                           'brand-verdure.png',
+                          'brand-white-space.png',
                         ].map((image) => (
                           <div
                             key={image}
