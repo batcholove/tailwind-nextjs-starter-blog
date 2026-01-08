@@ -674,14 +674,13 @@ export default function ExperimentalProjectDetail({
                         ].map((image) => (
                           <div
                             key={image}
-                            className="hover:border-primary-500 dark:hover:border-primary-400 flex aspect-square items-center justify-center overflow-hidden rounded-lg border-2 border-gray-200 bg-white transition-all duration-200 hover:shadow-md dark:border-gray-700 dark:bg-gray-900"
+                            className="hover:border-primary-500 dark:hover:border-primary-400 relative flex aspect-square items-center justify-center overflow-hidden rounded-lg border-2 border-gray-200 bg-white transition-all duration-200 hover:shadow-md dark:border-gray-700 dark:bg-gray-900"
                           >
                             <Image
                               src={`/static/images/${image}`}
                               alt={image.replace('brand-', '').replace('.png', '')}
-                              width={150}
-                              height={150}
-                              className="h-auto max-h-full w-full object-contain"
+                              fill
+                              className="object-contain"
                             />
                           </div>
                         ))}
