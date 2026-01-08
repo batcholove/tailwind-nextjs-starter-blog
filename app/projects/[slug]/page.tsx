@@ -36,7 +36,7 @@ const projectStructuredData: Record<string, StructuredProject> = {
     challenge:
       'When I started working with this agency I noticed several interconnected problems:\n\n• Inconsistent UX design engagement across product teams\n• Siloed design processes\n• A lack of shared understanding about design value\n• No design system foundation\n\n**Without addressing these problems our team effectiveness and product outcomes would be limited.**',
     approach:
-      '## Make design visible\nWe introduced <a href="https://www.nngroup.com/articles/ux-maturity-model/" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 underline"><strong>maturity models</strong></a> and a **shared language** to show what **good design** looked like at different levels.\n\n• UX maturity assessments\n• Clear articulation of design responsibilities\n• Reframing design as problem definition, not just delivery\n\n[IMAGE:beyond-ux-ui]\n\n## Grow team capability\nWe mapped skills across the design team to identify strengths, gaps, and growth opportunities.\n\n[CAROUSEL:skills-mapping]\n\nWhat this enabled\n\n• Intentional skill development\n• Better alignment of designers to work\n• Clearer paths for progression\n\n**We started treating growth as a system rather than a one-time effort.**\n\n## Align with delivery\nDesign practices were embedded into existing Agile workflows rather than layered on top. The focus was improving how design showed up in the work, not adding process.',
+      'We applied a multi-pronged approach to maximize our ability to mature with speed, scale, and depth in a sustainable way.\n\n## Make design visible\n\nWe introduced <a href="https://www.nngroup.com/articles/ux-maturity-model/" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 underline"><strong>maturity models</strong></a> and a **shared language** to show what **good design** looked like at different levels.\n\n• UX maturity assessments\n• Clear articulation of design responsibilities\n• Reframing design as problem definition, not just delivery\n\n[IMAGE:beyond-ux-ui]\n\n## Grow team capability\nWe mapped skills across the design team to identify strengths, gaps, and growth opportunities.\n\n[CAROUSEL:skills-mapping]\n\nWhat this enabled\n\n• Intentional skill development\n• Better alignment of designers to work\n• Clearer paths for progression\n\n**We started treating growth as a system rather than a one-time effort.**\n\n## Align with delivery\nDesign practices were embedded into existing Agile workflows rather than layered on top. The focus was improving how design showed up in the work, not adding process.',
     whatChanged:
       'The organization shifted from viewing design as a nice-to-have to seeing it as a core business capability. Engineering teams asked design questions upfront, product decisions were grounded in user research, and cross-functional collaboration became the norm.\n\n• Earlier and more consistent design involvement\n• Better stakeholder questions, not just requests\n• Clearer ownership and confidence among designers\n\n**We increased UX maturity across teams and leadership.**\n\n[IMAGE:ux-maturity-assessment]',
     whyMatters:
@@ -66,24 +66,24 @@ const projectStructuredData: Record<string, StructuredProject> = {
   },
   'putting-people-first': {
     title: 'Putting People First',
-    subtitle: 'Building shared mental models through personas and archetypes.',
+    subtitle: 'Designing from human needs rather than system constraints.',
     description:
-      'Learn how personas and archetypes align organizations around human-centered design. This project demonstrates how to build shared mental models that guide product decisions and foster empathy across teams.',
+      'Products and systems were being designed around data, architecture, and process. The people using them were often discussed, but rarely centered in decision-making. This work focused on creating shared understanding of users so teams could design with empathy, clarity, and intent.',
     imgSrc: '/static/images/archetypes-cover.png',
-    role: ['UX Strategist', 'Research Lead', 'Workshop Facilitator'],
-    focus: ['User Research', 'Personas', 'Stakeholder Alignment', 'Human-Centered Design'],
+    role: ['UX Strategist', 'Research Partner', 'Storyteller and Advocate'],
+    focus: ['User research', 'Personas and archetypes', 'Journey and ecosystem mapping'],
     outcome:
-      'Organizational alignment around user needs. Shared language across product, design, and engineering. Reduced debates about product direction. More empathetic decision-making. Faster product development cycles.',
+      'Teams gained a shared understanding of real users and their needs. Research insights became visible and actionable. Design and product decisions aligned more closely with how people actually work.',
     overview:
-      'This project focused on establishing shared understanding of who users are and what drives their behavior. By creating personas and archetypes, we gave teams a common reference point for decision-making.',
+      'Design decisions were often made without consistent reference to user needs. Research existed, but it was fragmented, hard to access, or limited to design teams. The opportunity was to leverage the research to become better aligned around people.',
     challenge:
-      'Teams held different assumptions about user needs. Product decisions were often debated without a shared reference point. User empathy varied across departments. Feature prioritization lacked a clear user-centered framework.',
+      'Product decisions were often debated based on assumptions about user needs and feature prioritization lacked a clear user-centered framework.\n\n• Limited shared understanding of users\n• Research artifacts siloed within design\n• Difficulty connecting research to system-level decisions\n\n**Without a common view of users, systems drifted away from human needs.**',
     approach:
-      'We conducted extensive user research across multiple segments. We synthesized findings into clear personas and archetypes. We facilitated workshops to introduce these mental models to stakeholders. We created artifacts to keep personas central to decision-making.',
+      'We conducted extensive user research across multiple segments. We synthesized findings into clear personas and archetypes. We facilitated workshops to introduce these mental models to stakeholders. We created artifacts to keep personas central to decision-making.\n\n## Create shared representations\n\nWe developed personas, archetypes, and journey maps that reflected real behaviors and constraints.\n\n• Lightweight proto-personas first\n• Deeper research over time\n• High-level archetypes to support system and service design\n\n**Artifacts were designed to evolve, not remain static.**\n\n## Design for reuse\n\nResearch artifacts were built as modular templates.\n\n• Reusable components in Figma\n• Consistent structure across personas and journeys\n• Easy to update and share\n\n**This reduced friction and increased adoption.**\n\n## Make research usable\n\nArtifacts were designed to support conversations, not just documentation.\n\nThey helped teams:\n\n• Align on user needs\n• Prioritize work\n• Communicate insights to leadership\n\n**Research became a shared tool.**',
     whatChanged:
-      'Teams referenced personas when making decisions. Debates shifted from opinions to evidence. Feature prioritization became more user-centered. New team members understood user context faster. Product decisions became more consistent.',
+      'Stronger alignment across teams and stakeholders\n\n• Increased demand for research artifacts beyond design\n• Clearer focus on real user needs\n• Better system-level decisions\n\n**A key signal of success was leadership using these artifacts in their own presentations.**',
     whyMatters:
-      'Shared mental models reduce friction and align teams. Personas make research actionable and memorable. Archetypes help teams understand motivations beyond demographics. User empathy drives better product decisions.',
+      'Good systems start with people. By grounding design in shared understanding of users, we ensured that:\n\n• Services reflected real workflows\n• Design systems supported real needs\n• Outcomes improved for both employees and customers\n\n**This work ensured that human needs stayed visible as scale increased.**',
   },
   'design-systems': {
     title: 'Design Systems',
@@ -108,24 +108,33 @@ const projectStructuredData: Record<string, StructuredProject> = {
   },
   'interface-flor': {
     title: 'Interface FLOR',
-    subtitle: 'Designing modular solutions for complex problems.',
+    subtitle: 'Designing across physical space, digital tools, and service delivery.',
     description:
-      'Designing modular flooring solutions while building digital design tools and improving operations. This project focused on increasing sales, customer and employee satisfaction while reducing returns through strategic UX design and operational excellence.',
+      'FLOR is a modular carpet tile system designed for homes and commercial spaces. Selling and installing the product required coordinating design, sales, operations, and customer education across multiple touchpoints. This work focused on improving how people selected, designed, and installed flooring while supporting both customer and employee needs.',
     imgSrc: '/static/images/interface-flor-cover.jpg',
-    role: ['Product Designer', 'UX Researcher', 'Prototyper'],
-    focus: ['Product Design', 'Customer Experience', 'Operational Excellence', 'B2B UX'],
+    role: [
+      'Design lead and manager',
+      'Service and experience designer',
+      'Tool and process designer',
+    ],
+    focus: [
+      'Service design',
+      'Experience design',
+      'Interior and spatial design',
+      'Operational and process design',
+    ],
     outcome:
-      'Sales increased by 25% in the first year. Customer satisfaction improved. Return rates decreased by 15%. Employees became more efficient. The digital tools became a competitive advantage.',
+      'Sales increased. Communication became clearer. Effort was reduced for customers and employees. Service delivery improved from initial consultation through installation. Design decisions supported business goals while improving the customer experience.',
     overview:
-      'Interface FLOR manufactures modular flooring solutions. We helped them improve customer experience and operational efficiency through digital tools and service design.',
+      'Customers were asked to make complex flooring decisions with limited tools and inconsistent guidance. Employees relied on manual processes that slowed delivery and increased the chance of error. The opportunity was to design a more coherent experience across the full service.',
     challenge:
-      'Customers struggled to visualize and configure their flooring options. Sales consultants spent too much time on manual calculations. Orders had high return rates due to miscommunication. Internal processes were inefficient.',
+      '• Complex product configurations\n• Time-consuming manual workflows\n• Inconsistent communication\n• High effort for customers and staff\n• Limited tools for visualization and decision-making\n\n**Without intervention, scale increased friction.**',
     approach:
-      'We created an interactive design tool allowing customers to visualize options in real-time. We streamlined the sales process with digital templates. We improved internal operations with better workflow tools.',
+      "It was important to design for the entire service experience to deliver on the promise of great service design. Here's how the holistic approach came together.\n\n## Design the service, not just the space\n\nWe examined the full customer journey from consultation to installation.\n\n• In-store experience\n• Sales conversations\n• Design decision-making\n• Installation and follow-up\n\n**This revealed gaps between intention and execution.**\n\n## Create tools that reduced effort\n\nWe designed tools and artifacts to improve clarity and speed.\n\n• Flooring layout tools for faster design exploration\n• Clear visual communication for customers\n• Instructional materials for staff and installers\n\n**These tools improved accuracy and confidence.**\n\n## Align experience with operations\n\nDesign decisions accounted for business realities.\n\n• Reduced errors and rework\n• Improved onboarding and training\n• More predictable delivery\n\n**The experience worked better because the system behind it worked better.**",
     whatChanged:
-      'Customers felt more confident in their purchases. Sales consultants became more productive. Returns decreased significantly. Customer satisfaction increased. The company gained competitive advantage.',
+      '• Faster sales cycles\n• Clearer communication with customers\n• Reduced effort for employees\n• Improved service consistency\n• Stronger alignment between design and operations\n\n**Design became a driver of both experience and efficiency.**',
     whyMatters:
-      'Good design improves business outcomes. Digital tools can improve physical product sales. Better customer experience leads to reduced returns. Operational efficiency directly impacts profitability.',
+      'Good design connects experience to execution. This project shows how:\n\n• Service design applies beyond digital products\n• Systems thinking improves physical environments\n• Design principles translate across mediums\n\n**It reflects the foundation that later informed my digital product work.**',
   },
   'esri-maps-layer-preferences': {
     title: 'Esri Maps & Layers',
@@ -152,7 +161,7 @@ const projectStructuredData: Record<string, StructuredProject> = {
     challenge:
       '• Dense, technical language\n• Legacy interaction patterns\n• Limited discoverability\n• High training overhead\n• Inconsistent behavior across tools\n\n**Users had to adapt to the system instead of the system adapting to users.**\n\n[IMAGE:layer-overview]',
     approach:
-      '## Ground decisions in user understanding\nWe leveraged existing research, personas, and archetypes to anchor decisions in real workflows and mental models.\n\n• Mapped user mental models\n• Aligned design decisions with research\n• Validated with real workflows\n\n**This ensured the redesign reflected how users actually work, not how the system was structured.**\n\n[CAROUSEL:layer-language-mapping]\n\n## Simplify through language\nA major focus was UX writing. Plain language replaced technical terminology.\n\n• Labels reflected user vocabulary\n• Descriptions clarified intent and impact\n• Removed jargon throughout the interface\n\n**Language became a design tool, not an afterthought.**\n\n[CAROUSEL:layer-ui-updates]\n\n## Apply consistent patterns\nThe redesign used established patterns from the design system.\n\n• Familiar interactions reduced learning effort\n• Reusable components ensured consistency\n• New patterns introduced only when necessary\n\n**This reinforced predictability across the system.**\n\n[IMAGE:layer-side-drawer-update]\n\n## Add flexibility without friction\nNew capabilities were introduced carefully.\n\n• Layer search improved discoverability\n• Reordering supported user workflows\n• Preferences became easier to scan and manage\n\n**Functionality increased while effort decreased.**\n\n[IMAGE:layer-search-update]',
+      'We took a holistic view of the mapping tools across the agency so we could apply methods that would scale.\n\n## Ground decisions in user understanding\n\nWe leveraged existing research, personas, and archetypes to anchor decisions in real workflows and mental models.\n\n• Mapped user mental models\n• Aligned design decisions with research\n• Validated with real workflows\n\n**This ensured the redesign reflected how users actually work, not how the system was structured.**\n\n[CAROUSEL:layer-language-mapping]\n\n## Simplify through language\nA major focus was UX writing. Plain language replaced technical terminology.\n\n• Labels reflected user vocabulary\n• Descriptions clarified intent and impact\n• Removed jargon throughout the interface\n\n**Language became a design tool, not an afterthought.**\n\n[CAROUSEL:layer-ui-updates]\n\n## Apply consistent patterns\nThe redesign used established patterns from the design system.\n\n• Familiar interactions reduced learning effort\n• Reusable components ensured consistency\n• New patterns introduced only when necessary\n\n**This reinforced predictability across the system.**\n\n[IMAGE:layer-side-drawer-update]\n\n## Add flexibility without friction\nNew capabilities were introduced carefully.\n\n• Layer search improved discoverability\n• Reordering supported user workflows\n• Preferences became easier to scan and manage\n\n**Functionality increased while effort decreased.**\n\n[IMAGE:layer-search-update]',
     whatChanged:
       'The redesigned interface made layer management intuitive and powerful. Users could accomplish complex tasks more easily.\n\n• Reduced cognitive load\n• Faster onboarding for new users\n• Easier training and support\n• Clearer alignment with other tools in the suite\n\n**The redesign demonstrated how small, focused improvements could have system-level impact.**\n\n[CAROUSEL:layer-drawer-animate]',
     whyMatters:
@@ -160,24 +169,29 @@ const projectStructuredData: Record<string, StructuredProject> = {
   },
   'interior-design-installations': {
     title: 'Interior Design & Installations',
-    subtitle: 'Applying design principles across disciplines.',
+    subtitle: 'Designing physical spaces as systems for human experience.',
     description:
-      'Good design is good design—it transcends discipline. This project demonstrates how strong design principles apply across any facet of design. A skilled designer can transfer foundational knowledge from one discipline to another, creating cohesive, thoughtful experiences whether designing spaces or interfaces.',
+      'This body of work spans residential, retail, and commercial interiors. Each project balanced aesthetics, function, and business constraints while shaping how people move through and experience a space. Interior design here is not decoration. It is experience design expressed physically.',
     imgSrc: '/static/images/interior-design-installations-cover.jpg',
-    role: ['Interior Designer', 'Spatial Designer', 'Art Director'],
-    focus: ['Spatial Design', 'Material Selection', 'Aesthetic Direction', 'User Experience'],
+    role: ['Interior designer', 'Experience designer', 'Client and stakeholder partner'],
+    focus: [
+      'Spatial design',
+      'Experience design',
+      'Human-centered environments',
+      'Brand expression through space',
+    ],
     outcome:
-      'Created a cohesive aesthetic that strengthened brand identity. Improved user experience in physical space. Enhanced employee satisfaction and productivity. Visitors had positive emotional responses.',
+      'Spaces that felt intentional, cohesive, and human. Clients gained environments that supported behavior, identity, and use; not just visual appeal.',
     overview:
-      'This project involved designing interior spaces for a creative company. The goal was to create an environment that reflected company values and fostered creativity.',
+      'Across these projects, the goal was consistent: design spaces that communicate purpose and reduce friction. Every decision, from layout to materials, supported how people entered, moved, worked, gathered, and felt.',
     challenge:
-      "Space felt disconnected from brand. Layout didn't support collaboration. Material choices seemed arbitrary. Overall aesthetic lacked intentionality.",
+      '• Translating abstract needs into physical form\n• Balancing brand, function, and budget\n• Designing for long-term use, not trends\n• Coordinating with contractors, vendors, and clients\n\n**The environment had to work before it looked good.**',
     approach:
-      'We developed a design language reflecting company values. We restructured the space to support different work modes. We selected materials thoughtfully. We created a cohesive aesthetic.',
+      'Every project may be vastly different but we always start with understanding the people who use the space and their intent.\n\n## Design from intent, not aesthetics\n\nEach project started by clarifying the emotional and functional goals.\n\n• What should this space communicate?\n• How should people feel and behave here?\n• What must work flawlessly every day?\n\n**Design choices followed those answers.**\n\n## Treat space as a system\n\nSpaces were designed as connected experiences.\n\n• Entry points and first impressions\n• Flow and movement\n• Zones for focus, collaboration, or rest\n• Material and lighting consistency\n\n**Every element reinforced the whole.**\n\n## Align design with real-world constraints\n\nGood design survives contact with reality.\n\n• Budget-aware material choices\n• Practical layouts for daily use\n• Clear documentation for builders and installers\n\n**Design was successful because it was buildable and usable.**',
     whatChanged:
-      'Employees felt proud of their workspace. Visitors had strong first impressions. The space naturally fostered collaboration. Brand identity became stronger.',
+      '• More intuitive movement through space\n• Clearer expression of brand and purpose\n• Reduced friction in daily use\n• Spaces that aged well over time\n\n**Design supported behavior, not just aesthetics.**',
     whyMatters:
-      'Design principles transfer across disciplines. Physical spaces impact behavior and emotion. Thoughtful design strengthens brand identity. Good design improves quality of life.',
+      'Interior design sharpened my ability to:\n\n• Design systems in physical space\n• Think in journeys, not screens\n• Balance creativity with constraints\n\n**Those same principles now drive my product and service design work.**',
   },
   'abba-haircare-brand-update': {
     title: 'Abba Haircare Brand Update',
@@ -201,25 +215,31 @@ const projectStructuredData: Record<string, StructuredProject> = {
       'Brands must evolve to stay relevant. Thoughtful refreshes honor heritage while attracting new audiences. Good design improves shelf presence and sales.',
   },
   'logo-design-marketing': {
-    title: 'Logo Design & Marketing',
-    subtitle: 'Building recognition and connection through visual identity.',
+    title: 'Brand Systems',
+    subtitle:
+      'Designing visual systems that express identity, scale across mediums, and remain recognizable over time.',
     description:
-      "Discover the importance of a strong logo design in connecting with customers and communicating the brand's values. This project explores how thoughtful logo design creates lasting impressions, builds brand recognition, and becomes the visual cornerstone of a company's identity.",
+      'This case study represents a collection of brand systems created over many years for companies, organizations, products, and individuals. Rather than focusing on single logos, the work emphasizes identity as a system; how color, type, mark, and layout work together to communicate meaning consistently across physical and digital environments.',
     imgSrc: '/static/images/logo-design-marketing-cover.png',
-    role: ['Logo Designer', 'Brand Designer', 'Visual Identity Designer'],
-    focus: ['Logo Design', 'Brand Identity', 'Visual Communication', 'Market Positioning'],
+    role: ['Brand designer', 'Visual identity designer', 'Marketing design partner'],
+    focus: [
+      'Identity systems',
+      'Logo design',
+      'Typography and color systems',
+      'Marketing applications',
+    ],
     outcome:
-      'Logo became instantly recognizable. Brand perception improved. Marketing materials had stronger impact. Customer recall increased significantly.',
+      'Cohesive brand systems that helped organizations launch, evolve, and communicate clearly across channels.',
     overview:
-      'This project focused on creating a distinctive logo and visual identity system for a startup.',
+      'A logo is not the brand. A brand system is how an identity behaves across every context it appears. This work demonstrates how visual identity must scale, from small digital touchpoints to large physical applications, while preserving clarity, tone, and emotional resonance.',
     challenge:
-      'Company lacked clear visual identity. Logo was forgettable. Marketing materials lacked cohesion. Brand positioning was unclear.',
+      '• Brands appearing across many platforms and materials\n• Inconsistent application of logos and visual styles\n• Need for identities that are both distinctive and flexible\n\n**The challenge was creating systems that could adapt without losing their essence.**',
     approach:
-      'We developed a logo reflecting company values and market position. We created a comprehensive visual identity system. We applied the identity consistently across touchpoints.',
+      'Some lead-in paragraph text to go here.\n\n## Start with the emotional core\n\nEvery brand began with understanding its emotional epicenter; what it needed to communicate and how it should feel.\n\n• Personality and tone\n• Audience and context\n• Values and intent\n\n**Design choices were made in service of that core.**\n\n## Design for real-world use\n\nBrand systems were designed to work in practice, not just presentations.\n\n• Logos that function at multiple scales\n• Color systems that reproduce reliably\n• Typography that remains legible and expressive\n\n**The goal was durability, not decoration.**\n\n## Think beyond the mark\n\nEach identity extended beyond a logo.\n\n• Marketing materials\n• Digital interfaces\n• Print and physical products\n• Apparel and environmental graphics\n\n**The system was the product.**',
     whatChanged:
-      'Logo became a valuable asset. Visual identity was distinctive and memorable. Marketing became more effective. Brand perception strengthened.',
+      '• Faster brand recognition\n• Consistent visual communication\n• Stronger emotional connection with audiences\n• A foundation for future growth\n\n**Brands could show up confidently wherever they needed to exist.**',
     whyMatters:
-      'Logos are the face of brands. Strong visual identity builds recognition. Consistent application strengthens brand impression. Design shapes perception.',
+      'Brand systems follow the same principles as product and service design. They require:\n\n• Clear intent\n• Thoughtful constraints\n• Scalable structure\n\n**This work reinforced that good design is invisible. When it works, it simply feels right.**',
   },
 }
 

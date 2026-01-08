@@ -884,11 +884,11 @@ export default function ExperimentalProjectDetail({
               <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
                 Why This Matters
               </h2>
-              <div className="prose dark:prose-invert max-w-none">
-                <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                  {parseBoldText(project.whyMatters)}
-                </p>
-              </div>
+              <ul className="space-y-2">
+                {(() => {
+                  return parseTextWithBullets(project.whyMatters)
+                })()}
+              </ul>
             </div>
           </section>
         )}
