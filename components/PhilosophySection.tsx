@@ -34,8 +34,8 @@ export default function PhilosophySection() {
           {/* Body Points */}
           <div className="space-y-4">
             <p className="text-center text-lg leading-8 text-gray-700 dark:text-gray-300">
-              I beleive core design principles provide the foundation to produce outcomes that scale
-              acorss disiplines and mediums.
+              I believe core design principles provide the foundation to produce outcomes that scale
+              across disciplines and mediums.
             </p>
           </div>
 

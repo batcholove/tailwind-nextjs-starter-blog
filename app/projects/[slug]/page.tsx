@@ -231,7 +231,7 @@ const projectStructuredData: Record<string, StructuredProject> = {
     outcome:
       'Cohesive brand systems that helped organizations launch, evolve, and communicate clearly across channels.',
     overview:
-      'A logo is not the brand. A brand system is how an identity behaves across every context it appears. This work demonstrates how visual identity must scale, from small digital touchpoints to large physical applications, while preserving clarity, tone, and emotional resonance.',
+      'A logo is not the brand. A brand system is how an identity behaves across every context it appears. This work demonstrates how visual identity must scale, from small digital touchpoints to large physical applications, while preserving clarity, tone, and emotional resonance.\n\n[BRAND_GRID]',
     challenge:
       '• Brands appearing across many platforms and materials\n• Inconsistent application of logos and visual styles\n• Need for identities that are both distinctive and flexible\n\n**The challenge was creating systems that could adapt without losing their essence.**',
     approach:

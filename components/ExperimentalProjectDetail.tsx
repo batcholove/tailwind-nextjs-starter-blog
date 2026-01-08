@@ -729,9 +729,54 @@ export default function ExperimentalProjectDetail({
               <h2 className="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
                 Project Overview
               </h2>
-              <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                {parseBoldText(project.overview)}
-              </p>
+              {(() => {
+                const hasBrandGrid = project.overview.includes('[BRAND_GRID]')
+                const overviewText = project.overview.replace('[BRAND_GRID]', '').trim()
+                return (
+                  <>
+                    <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
+                      {parseBoldText(overviewText)}
+                    </p>
+                    {hasBrandGrid && currentSlug === 'logo-design-marketing' && (
+                      <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+                        {[
+                          'brand-abba-haircare-logo.png',
+                          'brand-anjali-yoga-logo.png',
+                          'brand-bgbg-logo.png',
+                          'brand-big-window-logo.png',
+                          'brand-core-gis-logo.png',
+                          'brand-core-ui-logo.png',
+                          'brand-fineline-logo.png',
+                          'brand-foco-snob-logo.png',
+                          'brand-lyons-co-logo.png',
+                          'brand-modnetic-logo.png',
+                          'brand-music-sphere-logo.png',
+                          'brand-pride-logo.png',
+                          'brand-pyl-logo.png',
+                          'brand-random-seeds-logo.png',
+                          'brand-roseanthorn-logo.png',
+                          'brand-tierra-incognita-logo.png',
+                          'brand-verdure-logo.png',
+                          'brand- muchas-piedras-logo.png',
+                        ].map((image) => (
+                          <div
+                            key={image}
+                            className="hover:border-primary-500 dark:hover:border-primary-400 flex items-center justify-center overflow-hidden rounded-lg border-2 border-gray-200 bg-white p-4 transition-all duration-200 hover:shadow-md dark:border-gray-700 dark:bg-gray-900"
+                          >
+                            <Image
+                              src={`/static/images/${image}`}
+                              alt={image.replace('brand-', '').replace('-logo.png', '')}
+                              width={150}
+                              height={150}
+                              className="h-auto max-h-full w-full object-contain"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )
+              })()}
             </div>
           </section>
         )}

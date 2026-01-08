@@ -40,9 +40,6 @@ export default function Projects() {
             <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
               Projects
             </h1>
-            <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-              A collection of things I've designed and learned from over the course of my career.
-            </p>
           </div>
           <div className="container py-12">
             {renderProjectSection(

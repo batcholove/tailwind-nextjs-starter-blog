@@ -78,7 +78,7 @@ const projectsData: Project[] = [
   //   slug: 'abba-haircare-brand-update',
   // },
   {
-    title: 'Logo Design & Marketing',
+    title: 'Brand Systems',
     description: `Discover the importance of a strong logo design in connecting with customers and communicating 
     the brand's values. This project explores how thoughtful logo design creates lasting impressions, builds brand 
     recognition, and becomes the visual cornerstone of a company's identity.`,
