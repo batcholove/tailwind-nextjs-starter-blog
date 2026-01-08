@@ -652,24 +652,25 @@ export default function ExperimentalProjectDetail({
                     {hasBrandGrid && currentSlug === 'logo-design-marketing' && (
                       <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-3">
                         {[
-                          'brand-abba-haircare-logo.png',
-                          'brand-anjali-yoga-logo.png',
-                          'brand-bgbg-logo.png',
-                          'brand-big-window-logo.png',
-                          'brand-core-gis-logo.png',
-                          'brand-core-ui-logo.png',
-                          'brand-fineline-logo.png',
-                          'brand-foco-snob-logo.png',
-                          'brand-lyons-co-logo.png',
-                          'brand-modnetic-logo.png',
-                          'brand-music-sphere-logo.png',
-                          'brand-pride-logo.png',
-                          'brand-pyl-logo.png',
-                          'brand-random-seeds-logo.png',
-                          'brand-roseanthorn-logo.png',
-                          'brand-tierra-incognita-logo.png',
-                          'brand-verdure-logo.png',
-                          'brand- muchas-piedras-logo.png',
+                          'brand-abba.png',
+                          'brand-anjali.png',
+                          'brand-bgbg.png',
+                          'brand-big-window.png',
+                          'brand-bookclub.png',
+                          'brand-core.png',
+                          'brand-fineline.png',
+                          'brand-foco-snob.png',
+                          'brand-little-horse.png',
+                          'brand-lyons.png',
+                          'brand-modnetic.png',
+                          'brand-muchas-piedras.png',
+                          'brand-music-sphere.png',
+                          'brand-pride.png',
+                          'brand-pyl.png',
+                          'brand-random-seeds.png',
+                          'brand-roseanthorn.png',
+                          'brand-tierra-incognita.png',
+                          'brand-verdure.png',
                         ].map((image) => (
                           <div
                             key={image}
@@ -677,7 +678,7 @@ export default function ExperimentalProjectDetail({
                           >
                             <Image
                               src={`/static/images/${image}`}
-                              alt={image.replace('brand-', '').replace('-logo.png', '')}
+                              alt={image.replace('brand-', '').replace('.png', '')}
                               width={150}
                               height={150}
                               className="h-auto max-h-full w-full object-contain"
