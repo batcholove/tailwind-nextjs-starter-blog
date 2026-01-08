@@ -18,13 +18,13 @@ export default function Hero() {
           {/* Main heading */}
           <div className="space-y-3">
             <p className="text-lg font-bold text-black sm:text-xl md:text-2xl dark:text-white">
-              I'm Ryan Batch, a
+              I'm Ryan Batch,
             </p>
             <p
               className="text-5xl font-black text-black sm:text-6xl md:text-7xl lg:text-8xl dark:text-white"
               style={{ fontWeight: 900 }}
             >
-              Design
+              a Design
               <br />
               Strategist.
             </p>
