@@ -222,7 +222,7 @@ function parseTextWithBullets(text: string) {
       elements.push(
         <div
           key={`image-${imageType}`}
-          className="my-8 w-full overflow-hidden rounded-lg border-2 border-gray-300 dark:border-gray-600"
+          className="hover:border-primary-500 dark:hover:border-primary-400 my-8 w-full cursor-pointer overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600"
         >
           <Image
             src={imageData.src}
@@ -484,7 +484,7 @@ function parseApproachSection(text: string) {
           />
         )}
         {imageContent && (
-          <div className="mt-8 w-full overflow-hidden rounded-lg border-2 border-gray-300 dark:border-gray-600">
+          <div className="hover:border-primary-500 dark:hover:border-primary-400 mt-8 w-full cursor-pointer overflow-hidden rounded-lg border-2 border-gray-300 transition-all duration-200 hover:shadow-lg dark:border-gray-600">
             <Image
               src={imageContent.src}
               alt={imageContent.alt}
