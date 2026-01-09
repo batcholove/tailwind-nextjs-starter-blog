@@ -18,15 +18,15 @@ export default function Hero() {
           {/* Main heading */}
           <div className="space-y-3">
             <p className="text-lg font-bold text-black sm:text-xl md:text-2xl dark:text-white">
-              I'm Ryan Batch,
+              Ryan Batch
             </p>
             <p
               className="text-5xl font-black text-black sm:text-6xl md:text-7xl lg:text-8xl dark:text-white"
               style={{ fontWeight: 900 }}
             >
-              a Design
+              Design
               <br />
-              Strategist.
+              Strategist
             </p>
             <h1 className="text-3xl leading-10 font-semibold tracking-tight text-black sm:text-4xl sm:leading-12 md:text-5xl md:leading-14 dark:text-white">
               I craft outcomes
