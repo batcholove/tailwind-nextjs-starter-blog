@@ -81,8 +81,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${notoSans.variable} scroll-smooth`}
       suppressHydrationWarning
     >
-      <link rel="icon" type="image/jpeg" href={`${basePath}/static/images/avatar.jpg`} />
-      <link rel="apple-touch-icon" href={`${basePath}/static/images/avatar.jpg`} />
+      <link rel="icon" type="image/png" href={`${basePath}/static/images/avatar-1.png`} />
+      <link rel="apple-touch-icon" href={`${basePath}/static/images/avatar-1.png`} />
       <link rel="manifest" href={`${basePath}/static/favicons/site.webmanifest`} />
       <link
         rel="mask-icon"
