@@ -10,6 +10,10 @@ interface PageSEOProps {
 }
 
 export function genPageMetadata({ title, description, image, ...rest }: PageSEOProps): Metadata {
+  // Use full URL for og:image to ensure proper sharing
+  const ogImage = image ? image : siteMetadata.socialBanner
+  const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteMetadata.siteUrl}${ogImage}`
+
   return {
     title,
     description: description || siteMetadata.description,
@@ -18,14 +22,14 @@ export function genPageMetadata({ title, description, image, ...rest }: PageSEOP
       description: description || siteMetadata.description,
       url: './',
       siteName: siteMetadata.title,
-      images: image ? [image] : [siteMetadata.socialBanner],
+      images: [ogImageUrl],
       locale: 'en_US',
       type: 'website',
     },
     twitter: {
       title: `${title} | ${siteMetadata.title}`,
       card: 'summary_large_image',
-      images: image ? [image] : [siteMetadata.socialBanner],
+      images: [ogImageUrl],
     },
     ...rest,
   }

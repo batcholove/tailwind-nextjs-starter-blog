@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: siteMetadata.title,
     images: [
       {
-        url: siteMetadata.socialBanner,
+        url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
         width: 1200,
         height: 630,
         alt: siteMetadata.title,
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     images: [
       {
-        url: siteMetadata.socialBanner,
+        url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
         width: 1200,
         height: 630,
         alt: siteMetadata.title,
