@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'A portfolio site showcasing my design projects and case studies.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://ryanbatch.com',
+  siteUrl: 'https://modnetic.com',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: '/static/images/og-image.png',
