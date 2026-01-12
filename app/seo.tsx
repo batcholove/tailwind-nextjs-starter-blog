@@ -11,6 +11,7 @@ interface PageSEOProps {
 
 export function genPageMetadata({ title, description, image, ...rest }: PageSEOProps): Metadata {
   // Use full URL for og:image to ensure proper sharing
+  // Build timestamp: 2026-01-12
   const ogImage = image ? image : siteMetadata.socialBanner
   const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteMetadata.siteUrl}${ogImage}`
 
