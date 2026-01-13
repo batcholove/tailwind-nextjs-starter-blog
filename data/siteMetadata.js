@@ -1,4 +1,5 @@
 /** @type {import("pliny/config").PlinyConfig } */
+// Build: 2026-01-12 Production rebuild
 const siteMetadata = {
   title: 'Design Strategist',
   author: 'Ryan Batch',
