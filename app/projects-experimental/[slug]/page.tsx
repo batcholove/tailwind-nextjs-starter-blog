@@ -200,7 +200,7 @@ const projectStructuredData: Record<string, StructuredProject> = {
     whyMatters:
       'Brands must evolve to stay relevant. Thoughtful refreshes honor heritage while attracting new audiences. Good design improves shelf presence and sales.',
   },
-  'logo-design-marketing': {
+  'brand-systems': {
     title: 'Logo Design & Marketing',
     subtitle: 'Building recognition and connection through visual identity.',
     description:

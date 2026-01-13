@@ -83,8 +83,8 @@ const projectsData: Project[] = [
     the brand's values. This project explores how thoughtful logo design creates lasting impressions, builds brand 
     recognition, and becomes the visual cornerstone of a company's identity.`,
     imgSrc: '/static/images/logo-design-marketing-cover.png',
-    href: '/projects/logo-design-marketing',
-    slug: 'logo-design-marketing',
+    href: '/projects/brand-systems',
+    slug: 'brand-systems',
   },
 ]
 

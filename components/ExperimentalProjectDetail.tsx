@@ -649,7 +649,7 @@ export default function ExperimentalProjectDetail({
                     <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                       {parseBoldText(overviewText)}
                     </p>
-                    {hasBrandGrid && currentSlug === 'logo-design-marketing' && (
+                    {hasBrandGrid && currentSlug === 'brand-systems' && (
                       <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-3">
                         {[
                           'brand-abba.png',
