@@ -85,7 +85,13 @@ module.exports = () => {
       return [
         {
           source: '/(.*)',
-          headers: securityHeaders,
+          headers: [
+            ...securityHeaders,
+            {
+              key: 'Vercel-CDN-Cache-Control',
+              value: 'public, max-age=0, must-revalidate',
+            },
+          ],
         },
       ]
     },
