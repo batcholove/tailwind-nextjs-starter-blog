@@ -89,7 +89,7 @@ module.exports = () => {
             ...securityHeaders,
             {
               key: 'Vercel-CDN-Cache-Control',
-              value: 'public, max-age=0, must-revalidate',
+              value: 'public, max-age=0, must-revalidate, stale-while-revalidate=0',
             },
           ],
         },
