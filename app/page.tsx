@@ -4,7 +4,7 @@ import FeaturedWorkSection from '@/components/FeaturedWorkSection'
 import CapabilitiesSection from '@/components/CapabilitiesSection'
 import { genPageMetadata } from 'app/seo'
 
-export const metadata = genPageMetadata({ title: 'Home' })
+export const metadata = genPageMetadata({ title: '' })
 
 export default function Page() {
   return (
