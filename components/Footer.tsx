@@ -2,6 +2,7 @@ import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 
+// v2026-01-13: Force rebuild to deploy correct footer title
 export default function Footer() {
   return (
     <footer>
