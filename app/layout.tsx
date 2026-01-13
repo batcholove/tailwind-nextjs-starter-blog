@@ -26,16 +26,16 @@ export const metadata: Metadata = {
   },
   description: siteMetadata.description,
   openGraph: {
-    title: siteMetadata.title,
+    title: `Ryan Batch | ${siteMetadata.title}`,
     description: siteMetadata.description,
     url: './',
-    siteName: siteMetadata.title,
+    siteName: `Ryan Batch | ${siteMetadata.title}`,
     images: [
       {
         url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
         width: 1200,
         height: 630,
-        alt: siteMetadata.title,
+        alt: `Ryan Batch | ${siteMetadata.title}`,
       },
     ],
     locale: 'en_US',

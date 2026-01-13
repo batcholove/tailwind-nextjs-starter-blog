@@ -22,7 +22,7 @@ export function genPageMetadata({ title, description, image, ...rest }: PageSEOP
       title: `Ryan Batch | ${siteMetadata.title}`,
       description: description || siteMetadata.description,
       url: './',
-      siteName: siteMetadata.title,
+      siteName: `Ryan Batch | ${siteMetadata.title}`,
       images: [ogImageUrl],
       locale: 'en_US',
       type: 'website',
