@@ -21,8 +21,8 @@ const notoSans = Noto_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
-    default: siteMetadata.title,
-    template: `%s | ${siteMetadata.title}`,
+    default: `Ryan Batch | ${siteMetadata.title}`,
+    template: `Ryan Batch | ${siteMetadata.title}`,
   },
   description: siteMetadata.description,
   openGraph: {
