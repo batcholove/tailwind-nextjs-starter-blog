@@ -102,3 +102,4 @@ const siteMetadata = {
 }
 
 module.exports = siteMetadata
+// Rebuild trigger Mon Jan 12 18:39:41 MST 2026
