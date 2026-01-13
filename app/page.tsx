@@ -2,9 +2,6 @@ import Hero from '@/components/Hero'
 import PhilosophySection from '@/components/PhilosophySection'
 import FeaturedWorkSection from '@/components/FeaturedWorkSection'
 import CapabilitiesSection from '@/components/CapabilitiesSection'
-import { genPageMetadata } from 'app/seo'
-
-export const metadata = genPageMetadata({ title: '' })
 
 export default function Page() {
   return (
