@@ -47,8 +47,8 @@ const projectsData: Project[] = [
     strategic thinking, user research, and thoughtful design execution that resulted 
     in meaningful user engagement and business impact.`,
     imgSrc: '/static/images/layer-preferences-cover.png',
-    href: '/projects/esri-maps-layer-preferences',
-    slug: 'esri-maps-layer-preferences',
+    href: '/projects/esri-maps-layers',
+    slug: 'esri-maps-layers',
   },
   {
     title: 'Interface FLOR',

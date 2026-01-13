@@ -127,7 +127,7 @@ const projectStructuredData: Record<string, StructuredProject> = {
     whyMatters:
       'Good design improves business outcomes. Digital tools can improve physical product sales. Better customer experience leads to reduced returns. Operational efficiency directly impacts profitability.',
   },
-  'esri-maps-layer-preferences': {
+  'esri-maps-layers': {
     title: 'Esri Maps & Layers',
     subtitle: 'Simplifying complex tools through clear language and familiar patterns.',
     description:

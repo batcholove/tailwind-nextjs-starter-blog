@@ -136,7 +136,7 @@ const projectStructuredData: Record<string, StructuredProject> = {
     whyMatters:
       'Good design connects experience to execution. This project shows how:\n\n• Service design applies beyond digital products\n• Systems thinking improves physical environments\n• Design principles translate across mediums\n\n**It reflects the foundation that later informed my digital product work.**',
   },
-  'esri-maps-layer-preferences': {
+  'esri-maps-layers': {
     title: 'Esri Maps & Layers',
     subtitle: 'Simplifying complex tools through clear language and familiar patterns.',
     description:
