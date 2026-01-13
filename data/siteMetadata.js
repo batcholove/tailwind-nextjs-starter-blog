@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Ryan Batch',
+  title: 'Design Strategist',
   author: 'Ryan Batch',
   headerTitle: 'Ryan Batch',
-  description: 'A portfolio site showcasing my design projects and case studies.',
+  description: 'A portfolio of my design work.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://modnetic.com',
