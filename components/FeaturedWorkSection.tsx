@@ -13,19 +13,22 @@ interface FeaturedProject {
 const featuredProjects: FeaturedProject[] = [
   {
     title: 'Growing UX Maturity',
-    description: 'Scaling design across teams',
+    description:
+      'Building organizational UX capability and shifting design from execution support to strategic partner.',
     imgSrc: '/static/images/ux-maturity-cover.png',
     href: '/projects/growing-ux-maturity',
   },
   {
     title: 'System & Service Design',
-    description: 'Connecting experiences end to end',
+    description:
+      'Orchestrating cohesive experiences across interconnected government systems to improve usability, consistency, and delivery speed.',
     imgSrc: '/static/images/system-design-cover.png',
     href: '/projects/system-service-design',
   },
   {
     title: 'Putting People First',
-    description: 'Human-centered design through personas',
+    description:
+      'Translating research into shared mental models that align teams around human needs.',
     imgSrc: '/static/images/archetypes-cover.png',
     href: '/projects/putting-people-first',
   },

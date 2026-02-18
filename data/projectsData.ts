@@ -9,61 +9,49 @@ interface Project {
 const projectsData: Project[] = [
   {
     title: 'Growing UX Maturity',
-    description: `Cultivating UX maturity across an organization. This case study explores building a design-centric culture, establishing design systems, and empowering teams to make user-centered decisions at every level.`,
+    description: `Building UX maturity across a large organization by strengthening capability, clarifying roles, and embedding design into delivery. This work focused on shifting design from execution support to strategic partnership.`,
     imgSrc: '/static/images/ux-maturity-cover.png',
     href: '/projects/growing-ux-maturity',
     slug: 'growing-ux-maturity',
   },
   {
     title: 'System & Service Design',
-    description: `Redesigning a suite of government applications through a holistic approach to system design. This project 
-    leverages a comprehensive design system and UI component library while thinking strategically about the entire 
-    system architecture, user workflows, and organizational impact across multiple applications.`,
+    description: `Orchestrating a cohesive experience across multiple government applications by redesigning workflows, architecture, and shared systems. This work aligned teams around a unified design language while improving consistency, usability, and delivery speed.`,
     imgSrc: '/static/images/system-design-cover.png',
     href: '/projects/system-service-design',
     slug: 'system-service-design',
   },
   {
     title: 'Putting People First',
-    description: `Learn how personas and archetypes align organizations around human-centered design. 
-    This project demonstrates how to build shared mental models that guide product 
-    decisions and foster empathy across teams.`,
+    description: `Centering product and system decisions around shared understanding of real users. This work translated research into personas, archetypes, and journeys that aligned teams and grounded strategy in human needs.`,
     imgSrc: '/static/images/archetypes-cover.png',
     href: '/projects/putting-people-first',
     slug: 'putting-people-first',
   },
   {
     title: 'Design Systems',
-    description: `Explore the importance of design systems and UI component libraries in bridging the gap between 
-    design and development. A well-crafted design system ensures consistency, accelerates development, reduces 
-    miscommunication, and creates a shared language that empowers both designers and developers to build better products.`,
+    description: `Establishing shared design infrastructure to connect design and development. This work created reusable components, standards, and governance models that improved consistency, accessibility, and team efficiency at scale.`,
     imgSrc: '/static/images/design-systems-cover.png',
     href: '/projects/design-systems',
     slug: 'design-systems',
   },
   {
     title: 'Esri Maps & Layers',
-    description: `A compelling design challenge and innovative solution. This project showcases 
-    strategic thinking, user research, and thoughtful design execution that resulted 
-    in meaningful user engagement and business impact.`,
+    description: `Reducing complexity in a critical mapping workflow through clearer language, familiar patterns, and applied system thinking. This work improved usability without sacrificing capability, demonstrating how focused interaction design can drive system-level impact.`,
     imgSrc: '/static/images/layer-preferences-cover.png',
     href: '/projects/esri-maps-layers',
     slug: 'esri-maps-layers',
   },
   {
     title: 'Interface FLOR',
-    description: `Designing modular flooring solutions while building digital design tools and improving operations. 
-    This project focused on increasing sales, customer and employee satisfaction while reducing returns through 
-    strategic UX design and operational excellence.`,
+    description: `Designing an end-to-end service experience across physical space, digital tools, and operations. This work aligned customer experience with business realities, increasing sales while reducing friction for customers and employees.`,
     imgSrc: '/static/images/interface-flor-cover.jpg',
     href: '/projects/interface-flor',
     slug: 'interface-flor',
   },
   {
     title: 'Interior Design & Installations',
-    description: `Good design is good design—it transcends discipline. This project demonstrates how strong design 
-    principles apply across any facet of design. A skilled designer can transfer foundational knowledge from one 
-    discipline to another, creating cohesive, thoughtful experiences whether designing spaces or interfaces.`,
+    description: `Designing physical environments as cohesive experience systems. These projects demonstrate how spatial design, movement, and material choices shape behavior, reinforce identity, and reduce friction over time.`,
     imgSrc: '/static/images/interior-design-installations-cover.jpg',
     href: '/projects/interior-design-installations',
     slug: 'interior-design-installations',
@@ -79,9 +67,7 @@ const projectsData: Project[] = [
   // },
   {
     title: 'Brand Systems',
-    description: `Discover the importance of a strong logo design in connecting with customers and communicating 
-    the brand's values. This project explores how thoughtful logo design creates lasting impressions, builds brand 
-    recognition, and becomes the visual cornerstone of a company's identity.`,
+    description: `Creating scalable brand systems that express identity consistently across digital and physical touchpoints. This work focuses on structure, clarity, and durability so brands can evolve without losing recognition or intent.`,
     imgSrc: '/static/images/logo-design-marketing-cover.png',
     href: '/projects/brand-systems',
     slug: 'brand-systems',

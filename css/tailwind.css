@@ -182,3 +182,12 @@ input:-webkit-autofill:focus {
 .cursor-blink {
   animation: blink 1s infinite;
 }
+
+/* Allow text selection in cards */
+a h2,
+a p {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
