@@ -28,7 +28,7 @@ export default function Footer() {
           <Link href="/">{siteMetadata.title}</Link>
         </div>
         <div className="text-sm text-gray-500 dark:text-gray-400">
-          Designed and built with React, Next.js, and Tailwind. Supported by AI-assisted development.
+          Designed and built with React, Next.js, and Tailwind. Built with Claude Code and Cursor.
         </div>
       </div>
     </footer>
